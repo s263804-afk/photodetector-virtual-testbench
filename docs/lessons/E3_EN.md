@@ -1,19 +1,18 @@
-# E1 — Compile and execute firmware
+# E3 — Parse a byte stream
 
 Status: MATERIAL_PREPARED / NOT_TAUGHT. Personal mastery: PENDING_LEARNER.
 
-Read the actual implementation: firmware/platform/stm32/startup.S → uart.c → smoke.c.
+Read the actual implementation: firmware/core/protocol.c and host/PhotoBench.Core/Protocol/FrameCodec.cs.
 Walk from input through validation/state/calculation to output; predict a value
 before running the corresponding test. Use scripts/tools.ps1 to select the pinned
 NET10 executable; the word dotnet below means that executable.
 
-Run: scripts/build-firmware.ps1; .venv/Scripts/python.exe scripts/e1-smoke.py.
+Run: dotnet test host/PhotoBench.Tests --filter FullyQualifiedName~ProtocolTests.
 Record the command, real output, changed lines and your explanation. An agent-run
 PASS is technical evidence, not evidence that you personally understand it.
 
-Your modification exercise: Change the smoke reply text, rebuild, and find the changed bytes in the UART log.
-English retelling task: Explain compile, link, load and emulate. Which evidence proves ARM instructions ran?
-中文对照：编译、链接、加载、仿真不同；修改回复并观察实际字节。
+Your modification exercise: Corrupt one CRC nibble in a copied fixture; predict the counter and whether sequence advances.
+English retelling task: Explain frame, fragment, checksum, discard and resynchronise using actual bytes.
 
 Acceptance: run it yourself, explain the result without copying the answer,
 complete the modification and retell in English. Then update LEARNING_PROGRESS.md

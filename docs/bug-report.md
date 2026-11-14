@@ -16,5 +16,3 @@ Fix: reset macro reloads the exact project ELF and restores VectorTableOffset
 Regression: ActualArmFirmwarePassesTcpFaultAndRetainedConnectionResetChecks
 failed before the change and passed afterwards. Raw failure logs:
 reports/evidence/e6-reset-vector-failure.log and e6-reset-integration-failure.log.
-
-中文：复位后入口地址丢失是真实发现的问题；修复启动配置后，由原集成测试验证恢复。

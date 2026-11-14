@@ -1,6 +1,9 @@
-    0 个错误
+# English publication excerpt; not a verbatim local transcript.
+# Localized labels were translated and untranslated lines omitted.
+# Original transcript SHA256: 4becb5239e237a8c0db0632adebaa31e66b692bb01f2f01801b83a20803caa0b
+    0 Error(s)
 
-已用时间 00:00:01.18
+Elapsed time 00:00:01.18
 dark: PASS — Every raw/filtered/flag tuple matched the independent reference.
 light_step: PASS — Every raw/filtered/flag tuple matched the independent reference.
 noise: PASS — Every raw/filtered/flag tuple matched the independent reference. Noise fixture and Python sample statistics are saved separately; no ideal sqrt(16) reduction claim.

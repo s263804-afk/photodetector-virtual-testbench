@@ -10,8 +10,5 @@ Independent personal portfolio project; developed with AI assistance.
 - Verified noise statistics against an independent saved reference and tested
   lost replies, cancellation, disconnect and firmware reset without assuming TCP closes.
 
-中文：光电探测器虚拟测试平台；个人独立项目，AI辅助开发。C固件在Renode中运行，
-C#执行六类自动测试并导出报告；没有实物光电/ADC测量或硬件时序结论。
-
 Use project ownership and verified deliverables accurately. Interview readiness
 must be demonstrated separately through the exercises in docs/lessons.

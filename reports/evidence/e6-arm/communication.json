@@ -552,7 +552,7 @@
       "Event": "SESSION_INVALIDATED",
       "Sequence": 1,
       "Attempt": 0,
-      "Detail": "TRANSPORT_FAILURE:Unable to read data from the transport connection: \u4F60\u7684\u4E3B\u673A\u4E2D\u7684\u8F6F\u4EF6\u4E2D\u6B62\u4E86\u4E00\u4E2A\u5DF2\u5EFA\u7ACB\u7684\u8FDE\u63A5\u3002."
+      "Detail": "TRANSPORT_FAILURE:Unable to read data from the transport connection: Software on the host aborted an established connection.."
     }
   ]
 }

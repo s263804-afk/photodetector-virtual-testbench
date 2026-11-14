@@ -6,7 +6,7 @@
     "firmwareSha256": "138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241",
     "hostVersion": "PhotoBench1.0.0 / .NET 10.0.15",
     "toolVersions": {
-      "recorded_at_utc": "2026-11-14T00:06:50.803123\u002B00:00",
+      "recorded_at_utc": "2026-11-14T00:06:50.803123+00:00",
       "archives": {
         "renode": {
           "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\renode-1.17.0\\renode.zip",
@@ -138,14 +138,14 @@
           "baselineSubtractedV": 1.2001101047390077
         },
         "referenceErrorsV": {
-          "rawMeanErrorV": 3.3306690738754696E-15,
-          "rawStdErrorV": 1.951563910473908E-18,
-          "filtered_settledMeanErrorV": 1.5543122344752192E-15,
-          "filtered_settledStdErrorV": 5.074066167232161E-17
+          "rawMeanErrorV": 3.3306690738754696e-15,
+          "rawStdErrorV": 1.951563910473908e-18,
+          "filtered_settledMeanErrorV": 1.5543122344752192e-15,
+          "filtered_settledStdErrorV": 5.074066167232161e-17
         }
       },
       "limits": {
-        "referenceToleranceV": 1E-06
+        "referenceToleranceV": 1e-06
       },
       "detail": "Every raw/filtered/flag tuple matched the independent reference. Noise fixture and Python sample statistics are saved separately; no ideal sqrt(16) reduction claim."
     },
@@ -45428,7 +45428,7 @@
       "event": "SESSION_INVALIDATED",
       "sequence": 1,
       "attempt": 0,
-      "detail": "TRANSPORT_FAILURE:Unable to read data from the transport connection: \u4F60\u7684\u4E3B\u673A\u4E2D\u7684\u8F6F\u4EF6\u4E2D\u6B62\u4E86\u4E00\u4E2A\u5DF2\u5EFA\u7ACB\u7684\u8FDE\u63A5\u3002."
+      "detail": "TRANSPORT_FAILURE:Unable to read data from the transport connection: Software on the host aborted an established connection.."
     }
   ],
   "simulationDisclaimer": "ARM instructions execute in Renode. Synthetic codes enter a VIRTUAL_FEED software boundary; no ADC, optical device or physical timing is validated.",

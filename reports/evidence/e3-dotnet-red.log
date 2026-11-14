@@ -1,7 +1,10 @@
+# English publication excerpt; not a verbatim local transcript.
+# Localized labels were translated and untranslated lines omitted.
+# Original transcript SHA256: ac852469f28618023a2d43cdda02434e569c8f1a58ea41775b93b76b6ec2ec1c
   PhotoBench.Core -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\bin\Debug\net10.0\PhotoBench.Core.dll
   PhotoBench.Tests -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll
-C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0)的测试运行
-总共 1 个测试文件与指定模式相匹配。
+C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0) test run
+A total of 1 test files matched the specified pattern.
 [xUnit.net 00:00:00.59]     PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 1, command: "PING", args: "-", wire: "1|1|PING|-|CFA9\n") [FAIL]
 [xUnit.net 00:00:00.60]     PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 3, command: "FEED", args: "124,869,4095", wire: "1|3|FEED|124,869,4095|643E\n") [FAIL]
 [xUnit.net 00:00:00.60]     PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 0, command: "HELLO", args: "-", wire: "1|0|HELLO|-|CB9D\n") [FAIL]
@@ -11,93 +14,93 @@ C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testben
 [xUnit.net 00:00:00.60]     PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "bad|argument") [FAIL]
 [xUnit.net 00:00:00.60]     PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "line\nbreak") [FAIL]
 [xUnit.net 00:00:00.60]     PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "") [FAIL]
-  失败 PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 1, command: "PING", args: "-", wire: "1|1|PING|-|CFA9\n") [128 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 1, command: "PING", args: "-", wire: "1|1|PING|-|CFA9\n") [128 ms]
+  Error message:
    System.NotImplementedException : The method or operation is not implemented.
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Core.Protocol.FrameCodec.Encode(Frame frame) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Protocol\FrameCodec.cs:line 6
    at PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(Int32 sequence, String command, String args, String wire) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 23
    at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
-  失败 PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 3, command: "FEED", args: "124,869,4095", wire: "1|3|FEED|124,869,4095|643E\n") [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 3, command: "FEED", args: "124,869,4095", wire: "1|3|FEED|124,869,4095|643E\n") [< 1 ms]
+  Error message:
    System.NotImplementedException : The method or operation is not implemented.
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Core.Protocol.FrameCodec.Encode(Frame frame) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Protocol\FrameCodec.cs:line 6
    at PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(Int32 sequence, String command, String args, String wire) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 23
    at InvokeStub_ProtocolTests.GoldenFramesMatchIndependentBytes(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  失败 PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 0, command: "HELLO", args: "-", wire: "1|0|HELLO|-|CB9D\n") [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 0, command: "HELLO", args: "-", wire: "1|0|HELLO|-|CB9D\n") [< 1 ms]
+  Error message:
    System.NotImplementedException : The method or operation is not implemented.
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Core.Protocol.FrameCodec.Encode(Frame frame) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Protocol\FrameCodec.cs:line 6
    at PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(Int32 sequence, String command, String args, String wire) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 23
    at InvokeStub_ProtocolTests.GoldenFramesMatchIndependentBytes(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  失败 PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 3, command: "DATA", args: "0;124:124:0;869:496:0;4095:1696:2", wire: "1|3|DATA|0;124:124:0;869:496:0;4095:1696:2|609D\n") [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(sequence: 3, command: "DATA", args: "0;124:124:0;869:496:0;4095:1696:2", wire: "1|3|DATA|0;124:124:0;869:496:0;4095:1696:2|609D\n") [< 1 ms]
+  Error message:
    System.NotImplementedException : The method or operation is not implemented.
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Core.Protocol.FrameCodec.Encode(Frame frame) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Protocol\FrameCodec.cs:line 6
    at PhotoBench.Tests.ProtocolTests.GoldenFramesMatchIndependentBytes(Int32 sequence, String command, String args, String wire) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 23
    at InvokeStub_ProtocolTests.GoldenFramesMatchIndependentBytes(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  失败 PhotoBench.Tests.ProtocolTests.CrcKnownVectorIs29B1 [3 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.CrcKnownVectorIs29B1 [3 ms]
+  Error message:
    Assert.Equal() Failure: Values differ
 Expected: 10673
 Actual:   0
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.CrcKnownVectorIs29B1() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 11
    at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
    at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-  失败 PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "nonasciié") [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "nonasciié") [< 1 ms]
+  Error message:
    Assert.Throws() Failure: Exception type was not an exact match
 Expected: typeof(System.ArgumentException)
 Actual:   typeof(System.NotImplementedException)
 ---- System.NotImplementedException : The method or operation is not implemented.
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(String args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 77
    at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
 ----- Inner Stack Trace -----
    at PhotoBench.Core.Protocol.FrameCodec.Encode(Frame frame) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Protocol\FrameCodec.cs:line 6
    at PhotoBench.Tests.ProtocolTests.<>c__DisplayClass5_0.<EncoderRejectsUnframedOrNonAsciiArguments>b__0() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 77
-  失败 PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "bad|argument") [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "bad|argument") [< 1 ms]
+  Error message:
    Assert.Throws() Failure: Exception type was not an exact match
 Expected: typeof(System.ArgumentException)
 Actual:   typeof(System.NotImplementedException)
 ---- System.NotImplementedException : The method or operation is not implemented.
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(String args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 77
    at InvokeStub_ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
 ----- Inner Stack Trace -----
    at PhotoBench.Core.Protocol.FrameCodec.Encode(Frame frame) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Protocol\FrameCodec.cs:line 6
    at PhotoBench.Tests.ProtocolTests.<>c__DisplayClass5_0.<EncoderRejectsUnframedOrNonAsciiArguments>b__0() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 77
-  失败 PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "line\nbreak") [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "line\nbreak") [< 1 ms]
+  Error message:
    Assert.Throws() Failure: Exception type was not an exact match
 Expected: typeof(System.ArgumentException)
 Actual:   typeof(System.NotImplementedException)
 ---- System.NotImplementedException : The method or operation is not implemented.
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(String args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 77
    at InvokeStub_ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
 ----- Inner Stack Trace -----
    at PhotoBench.Core.Protocol.FrameCodec.Encode(Frame frame) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Protocol\FrameCodec.cs:line 6
    at PhotoBench.Tests.ProtocolTests.<>c__DisplayClass5_0.<EncoderRejectsUnframedOrNonAsciiArguments>b__0() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 77
-  失败 PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "") [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(args: "") [< 1 ms]
+  Error message:
    Assert.Throws() Failure: Exception type was not an exact match
 Expected: typeof(System.ArgumentException)
 Actual:   typeof(System.NotImplementedException)
 ---- System.NotImplementedException : The method or operation is not implemented.
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(String args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 77
    at InvokeStub_ProtocolTests.EncoderRejectsUnframedOrNonAsciiArguments(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
@@ -112,75 +115,75 @@ Actual:   typeof(System.NotImplementedException)
 [xUnit.net 00:00:00.62]     PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|-1|PING|-|0000\n", crc: False) [FAIL]
 [xUnit.net 00:00:00.62]     PhotoBench.Tests.ProtocolTests.EveryFragmentBoundaryAndCoalescedFramesAreSupported [FAIL]
 [xUnit.net 00:00:00.62]     PhotoBench.Tests.ProtocolTests.OverflowAndNonAsciiAreBoundedAndRecoverable [FAIL]
-  失败 PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|1|PING|-|CFAg\n", crc: False) [2 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|1|PING|-|CFAg\n", crc: False) [2 ms]
+  Error message:
    Assert.Equal() Failure: Values differ
 Expected: 1
 Actual:   0
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(String bad, Boolean crc) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 54
    at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
-  失败 PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|1|PING|-|0000\n", crc: True) [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|1|PING|-|0000\n", crc: True) [< 1 ms]
+  Error message:
    Assert.Equal() Failure: Values differ
 Expected: 1
 Actual:   0
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(String bad, Boolean crc) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 54
    at InvokeStub_ProtocolTests.BadFramesAreDroppedAndParserRecovers(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  失败 PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "2|1|PING|-|0000\n", crc: False) [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "2|1|PING|-|0000\n", crc: False) [< 1 ms]
+  Error message:
    Assert.Equal() Failure: Values differ
 Expected: 1
 Actual:   0
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(String bad, Boolean crc) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 54
    at InvokeStub_ProtocolTests.BadFramesAreDroppedAndParserRecovers(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  失败 PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|PING|FFFF\n", crc: False) [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|PING|FFFF\n", crc: False) [< 1 ms]
+  Error message:
    Assert.Equal() Failure: Values differ
 Expected: 1
 Actual:   0
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(String bad, Boolean crc) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 54
    at InvokeStub_ProtocolTests.BadFramesAreDroppedAndParserRecovers(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  失败 PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|1|FEED||0000\n", crc: False) [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|1|FEED||0000\n", crc: False) [< 1 ms]
+  Error message:
    Assert.Equal() Failure: Values differ
 Expected: 1
 Actual:   0
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(String bad, Boolean crc) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 54
    at InvokeStub_ProtocolTests.BadFramesAreDroppedAndParserRecovers(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  失败 PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|-1|PING|-|0000\n", crc: False) [< 1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(bad: "1|-1|PING|-|0000\n", crc: False) [< 1 ms]
+  Error message:
    Assert.Equal() Failure: Values differ
 Expected: 1
 Actual:   0
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.BadFramesAreDroppedAndParserRecovers(String bad, Boolean crc) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 54
    at InvokeStub_ProtocolTests.BadFramesAreDroppedAndParserRecovers(Object, Span`1)
    at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  失败 PhotoBench.Tests.ProtocolTests.EveryFragmentBoundaryAndCoalescedFramesAreSupported [1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.EveryFragmentBoundaryAndCoalescedFramesAreSupported [1 ms]
+  Error message:
    Assert.Single() Failure: The collection was empty
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.EveryFragmentBoundaryAndCoalescedFramesAreSupported() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 36
    at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
    at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-  失败 PhotoBench.Tests.ProtocolTests.OverflowAndNonAsciiAreBoundedAndRecoverable [1 ms]
-  错误消息:
+  Failed PhotoBench.Tests.ProtocolTests.OverflowAndNonAsciiAreBoundedAndRecoverable [1 ms]
+  Error message:
    Assert.Equal() Failure: Values differ
 Expected: 1
 Actual:   0
-  堆栈跟踪:
+  Stack trace:
      at PhotoBench.Tests.ProtocolTests.OverflowAndNonAsciiAreBoundedAndRecoverable() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ProtocolTests.cs:line 64
    at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
    at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
 
-失败!  - 失败:    17，通过:     0，已跳过:     0，总计:    17，持续时间: 179 ms - PhotoBench.Tests.dll (net10.0)
+Failed!  - Failed:    17,Passed:     0,Skipped:     0,Total:    17,Duration: 179 ms - PhotoBench.Tests.dll (net10.0)

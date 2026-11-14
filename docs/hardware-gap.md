@@ -11,5 +11,3 @@ DMA and interrupts; physical UART/USB transport; electrical signal integrity;
 instrument-backed calibration, temperature/noise tests and timing measurements.
 The positive0.060V/uW model slope is an assumed effective polarity, not a validated
 TIA circuit. No measured optical sensitivity, bandwidth, BER or throughput claim.
-
-中文：当前验证软件处理与虚拟测试流程；电路、ADC/DMA、真实串口、仪器校准与硬件时序均待实物验证。

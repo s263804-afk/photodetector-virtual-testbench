@@ -19,7 +19,7 @@ request returns the exact cached response; changed payload at the same sequence 
 other unexpected sequence returns ERR_SEQUENCE and does not consume the expected sequence.
 
 | Command | Arguments | Successful response command/arguments |
-|---|---|---|
+| --- | --- | --- |
 | PING | - | PONG / - |
 | SET_LIMITS | low,high | OK / - |
 | START | - | OK / - |

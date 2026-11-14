@@ -6,7 +6,7 @@
     "firmwareSha256": "138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241",
     "hostVersion": "PhotoBench1.0.0 / .NET 10.0.15",
     "toolVersions": {
-      "recorded_at_utc": "2026-11-14T00:06:50.803123\u002B00:00",
+      "recorded_at_utc": "2026-11-14T00:06:50.803123+00:00",
       "archives": {
         "renode": {
           "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\renode-1.17.0\\renode.zip",
@@ -73,7 +73,7 @@
       ],
       "metrics": {},
       "limits": {},
-      "detail": "SocketException: \u7531\u4E8E\u76EE\u6807\u8BA1\u7B97\u673A\u79EF\u6781\u62D2\u7EDD\uFF0C\u65E0\u6CD5\u8FDE\u63A5\u3002"
+      "detail": "SocketException: The target computer actively refused the connection."
     }
   ],
   "samples": [],

@@ -1,19 +1,18 @@
-# E6 — Recover without inventing outcomes
+# E2 — Trace an integer moving average
 
 Status: MATERIAL_PREPARED / NOT_TAUGHT. Personal mastery: PENDING_LEARNER.
 
-Read the actual implementation: host/PhotoBench.Core/Session/DeviceSession.cs and Diagnostics/CommunicationChecks.cs.
+Read the actual implementation: firmware/core/filter.c and firmware/tests/test_filter.c.
 Walk from input through validation/state/calculation to output; predict a value
 before running the corresponding test. Use scripts/tools.ps1 to select the pinned
 NET10 executable; the word dotnet below means that executable.
 
-Run: dotnet test host/PhotoBench.Tests --filter FullyQualifiedName~SessionTests.
+Run: scripts/build-host-c.ps1.
 Record the command, real output, changed lines and your explanation. An agent-run
 PASS is technical evidence, not evidence that you personally understand it.
 
-Your modification exercise: Change the unit-test timeout and inspect identical retry bytes in the trace; restore it afterwards.
-English retelling task: Explain why a connected socket does not prove a live application session. What is indeterminate?
-中文对照：断线、复位和丢回复不同；不确定执行结果不能自动跨会话重放。
+Your modification exercise: Replace the first three samples with100,300,500; calculate startup outputs before running.
+English retelling task: Describe the ring buffer, running sum and floor division. Why can uint32 hold16 full-scale samples?
 
 Acceptance: run it yourself, explain the result without copying the answer,
 complete the modification and retell in English. Then update LEARNING_PROGRESS.md

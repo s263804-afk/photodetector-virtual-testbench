@@ -1,4 +1,7 @@
-  正在确定要还原的项目…
-  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\PhotoBench.Core.csproj (用时 57 毫秒)。
-  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\PhotoBench.Cli.csproj (用时 57 毫秒)。
-  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\PhotoBench.Tests.csproj (用时 157 毫秒)。
+# English publication excerpt; not a verbatim local transcript.
+# Localized labels were translated and untranslated lines omitted.
+# Original transcript SHA256: d3e29625fba88881611ba7612e1bb952bc4e0a024240531b3c251dd58b07dcc8
+  Determining projects to restore...
+  Restored C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\PhotoBench.Core.csproj (elapsed 57 ms).
+  Restored C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\PhotoBench.Cli.csproj (elapsed 57 ms).
+  Restored C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\PhotoBench.Tests.csproj (elapsed 157 ms).

@@ -1,2 +1,5 @@
-dark: FAIL — SocketException: 由于目标计算机积极拒绝，无法连接。
+# English publication excerpt; not a verbatim local transcript.
+# Localized labels were translated and untranslated lines omitted.
+# Original transcript SHA256: c31c9e7b07933097e0ddc0c56bf240cd433eb62b9a824edf4650d0926994a4c0
+dark: FAIL — SocketException: The target computer actively refused the connection.
 Overall: FAIL; 0 UART results; C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\reports\evidence\review-refused-report\report.html

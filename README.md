@@ -70,12 +70,10 @@ C# independent comparison and analysis → JSON/CSV/HTML.
 - [Hardware gaps](docs/hardware-gap.md): what physical validation would require.
 - [Environment](docs/environment.md): versions, official sources and setup issues.
 - [Test plan](docs/test-plan.md), [actual bug report](docs/bug-report.md).
-- [English demo](docs/DEMO_EN_ZH.md), [CV entry](docs/CV_ENTRY_EN_ZH.md).
+- [English demo](docs/DEMO_EN.md), [CV entry](docs/CV_ENTRY_EN.md).
 - [AI contribution](docs/AI_ASSISTANCE.md) and [personal learning](docs/LEARNING_PROGRESS.md).
 
 Renode1.17.0's portable bundle includes an oldNET8.0.10 runtime. Our C# host uses
 NET10.0.15; the simulator vendor runtime is a separate documented dependency gap.
 No substitute runtime has been silently applied. Both simulator control and UART
 remain local. Tool binaries and caches are not redistributed in this repository.
-
-中文：个人独立作品集项目，使用AI辅助开发与测试。已运行的技术成果与本人后续学习验收分开记录。

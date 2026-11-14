@@ -1,3 +1,6 @@
+# English publication excerpt; not a verbatim local transcript.
+# Localized labels were translated and untranslated lines omitted.
+# Original transcript SHA256: f18a272a8c150499b1a4a1a7d65b8de7e90ab92db1c0f6db38734f94bde37f16
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/host
@@ -20,25 +23,25 @@ Total Test time (real) =   0.29 sec
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/arm
 ninja: no work to do.
-  正在确定要还原的项目…
-  所有项目均是最新的，无法还原。
+  Determining projects to restore...
+  All projects are up-to-date for restore.
   PhotoBench.Core -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\bin\Debug\net10.0\PhotoBench.Core.dll
   PhotoBench.Cli -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\bin\Debug\net10.0\photo-bench.dll
   PhotoBench.Tests -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll
-C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0)的测试运行
-总共 1 个测试文件与指定模式相匹配。
-结果文件: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\reports\evidence\test-results\verification.trx
+C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0) test run
+A total of 1 test files matched the specified pattern.
+Results file: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\reports\evidence\test-results\verification.trx
 
-已通过! - 失败:     0，通过:    46，已跳过:     0，总计:    46，持续时间: 21 s - PhotoBench.Tests.dll (net10.0)
+Passed! - Failed:     0,Passed:    46,Skipped:     0,Total:    46,Duration: 21 s - PhotoBench.Tests.dll (net10.0)
   PhotoBench.Core -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\bin\Release\net10.0\PhotoBench.Core.dll
   PhotoBench.Cli -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\bin\Release\net10.0\photo-bench.dll
   PhotoBench.Tests -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Release\net10.0\PhotoBench.Tests.dll
 
-已成功生成。
-    0 个警告
-    0 个错误
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
 
-已用时间 00:00:01.63
+Elapsed time 00:00:01.63
 dark: PASS — Every raw/filtered/flag tuple matched the independent reference.
 light_step: PASS — Every raw/filtered/flag tuple matched the independent reference.
 noise: PASS — Every raw/filtered/flag tuple matched the independent reference. Noise fixture and Python sample statistics are saved separately; no ideal sqrt(16) reduction claim.

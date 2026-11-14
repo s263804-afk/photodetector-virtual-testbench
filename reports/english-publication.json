@@ -1,0 +1,181 @@
+{
+  "language": "English",
+  "source_commit_before_language_update": "c8301561abe2881d207e7ea16a35e845eb2dc206",
+  "scope": "Documentation, documentation paths and localized evidence display text; runtime algorithms and numeric measurements unchanged",
+  "originals": "Unedited bilingual documents and local transcripts were retained in a separate local backup outside this repository",
+  "evidence_note": "Listed artifacts are publication translations/excerpts, not verbatim local console output. github-ci-verified.log preserves the original English cloud execution transcript.",
+  "changed_evidence": [
+    {
+      "path": "reports/evidence/e1-dotnet-build.log",
+      "original_sha256": "131fe9f42464423edfb132e498dcdae2f3070545ef668f4890d822c02f40f2dd",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e3-dotnet-green.log",
+      "original_sha256": "a564029293000b085da219f158ae72ce1fdb17adb947eab6240e9881bff35dac",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e3-dotnet-red.log",
+      "original_sha256": "ac852469f28618023a2d43cdda02434e569c8f1a58ea41775b93b76b6ec2ec1c",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e5-green.log",
+      "original_sha256": "fa43da5b66f80a5fd33ddca50951bd0fb326fcd5c8d5f8eac844945539fb839a",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e5-red.log",
+      "original_sha256": "861e54f63b9bff561fbced98867b7c6f4f6fdcda94476bcfc82e45855c65a8a1",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e6-arm-green.log",
+      "original_sha256": "37e8ffa5a1ab35b594ab320daed723a8a213cad5cd6cb03f961d27a5bc553050",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e6-arm-red.log",
+      "original_sha256": "509f8d0c3ef13768bf089ee5d7c6ab199deb60514d177e62039b0434fd0fee94",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e6-arm/communication.json",
+      "original_sha256": "f715f3ae6b698f5332560f1fc5e235d1fc18072251a0c008d050fcfba0abe604",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e6-green.log",
+      "original_sha256": "53e4412537b4d59cd2334fa4d13d51a278ace6ec80f3fba23eadf3ae09b0978d",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e6-reset-integration-failure.log",
+      "original_sha256": "37e8ffa5a1ab35b594ab320daed723a8a213cad5cd6cb03f961d27a5bc553050",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e6-session-green.log",
+      "original_sha256": "9e970204c4216143eeea11b65760d91bbe8a92bd6c49e4213a5d982cfbefdbb3",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e6-session-red.log",
+      "original_sha256": "949d1c0ac46afbd10dfd5e740907c168ff07c45da552f3eb256069540a6acf8f",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e7-all-green.log",
+      "original_sha256": "f6441d80457a971ea5884b37ace97798feb8cc9f2910f9712adb510fa79b8d08",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e7-cli-red.log",
+      "original_sha256": "16e71d30862dd8b0bbc2e2ef7716857a2642dbc6ea1fe82cd8e76a65e2eab00a",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e7-green.log",
+      "original_sha256": "156f97f71e5d52c33560507f23834d0ea73b2b781d29609f2a6cdaae75374f7a",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e7-red.log",
+      "original_sha256": "d60ad77c31b2919068e71f7c898dced3570985cda13570fb36ef5154583bb689",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e8-fresh-console.log",
+      "original_sha256": "3ae4e52768a6b3f0d2cb92251656e7ec4181542792eb89ef1192ebce78b06fc1",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e8-fresh-setup.log",
+      "original_sha256": "6d76db40b28f8987e1503c4dfdfe8a6db868f2521c13dfe9bea2d7205958aea0",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e8-fresh-verification.log",
+      "original_sha256": "7069a9d49250926949d79cf59428a94a932cb6ea06f38dc1e97f99118f64fd74",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e8-full-verification.log",
+      "original_sha256": "f18a272a8c150499b1a4a1a7d65b8de7e90ab92db1c0f6db38734f94bde37f16",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e8-lock-refresh.log",
+      "original_sha256": "d3e29625fba88881611ba7612e1bb952bc4e0a024240531b3c251dd58b07dcc8",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/e8-setup.log",
+      "original_sha256": "e0e20fb9e9580a4944a11e2ce6bc10a433f81c7bb3c018fb84f23125cc9d1cb4",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/review-fresh-console.log",
+      "original_sha256": "4becb5239e237a8c0db0632adebaa31e66b692bb01f2f01801b83a20803caa0b",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/review-full-verification.log",
+      "original_sha256": "5e80d2107ed9fec0d93f9216947591c4693939866bf740c216846e16f65d0ae9",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/review-history-race-red.log",
+      "original_sha256": "eb0afb0cb6a624f5f963a62702249e3186cc2b9774a2fe195c4293fd06e938a4",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/review-refused-cli.log",
+      "original_sha256": "c31c9e7b07933097e0ddc0c56bf240cd433eb62b9a824edf4650d0926994a4c0",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/review-refused-report/report.html",
+      "original_sha256": "bdf2b98dc067c6082f1ba16da36876efd6086e995bc155ede4a425aa479650d2",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/review-refused-report/report.json",
+      "original_sha256": "5fdca693272066eedef59152a1337773144e62c259a8e41062442b800aa2a240",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/review-regressions-green.log",
+      "original_sha256": "e4dfd14b4b7faf49e74894c71f25bf93a2efc6166ee8ebabbc507a02e5e75035",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/review-regressions-red.log",
+      "original_sha256": "ed17812d35575c503ecbba2487bbc4dcc86d9baf5ba33342dcc364577e2076e4",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/evidence/test-results/verification.trx",
+      "original_sha256": "d292327ad314eaa4736985cc1a600b41c60ba76076c3333667bbb1c652aa3a05",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    },
+    {
+      "path": "reports/example/report.json",
+      "original_sha256": "b401ef717f4213a209917de665bacde5dd48d17796897b11a511d61d75a8ec82",
+      "publication": "Localized display text translated or excerpted; numeric results and outcomes unchanged"
+    }
+  ],
+  "renamed_documents": {
+    "docs/CV_ENTRY_EN_ZH.md": "docs/CV_ENTRY_EN.md",
+    "docs/DEMO_EN_ZH.md": "docs/DEMO_EN.md",
+    "docs/lessons/E1_EN_ZH.md": "docs/lessons/E1_EN.md",
+    "docs/lessons/E2_EN_ZH.md": "docs/lessons/E2_EN.md",
+    "docs/lessons/E3_EN_ZH.md": "docs/lessons/E3_EN.md",
+    "docs/lessons/E4_EN_ZH.md": "docs/lessons/E4_EN.md",
+    "docs/lessons/E5_EN_ZH.md": "docs/lessons/E5_EN.md",
+    "docs/lessons/E6_EN_ZH.md": "docs/lessons/E6_EN.md",
+    "docs/lessons/E7_EN_ZH.md": "docs/lessons/E7_EN.md",
+    "docs/lessons/E8_EN_ZH.md": "docs/lessons/E8_EN.md"
+  }
+}

@@ -28,7 +28,5 @@ The launcher records the loaded ELF hash. Source files remain in the user's work
 Setup: scripts/setup.ps1 -Python <Python3.12.7 executable>; scripts/verify.ps1. Individual commands:
 scripts/build-firmware.ps1; scripts/build-host-c.ps1; Python scripts/e1-smoke.py.
 
-中文：C 固件交叉编译到 ARM；电脑端 C# 使用 .NET10。Renode 工具本身的旧内置运行时单独披露。
-
 Each C#/Python launcher now supplies --config pointing to a per-launch private config
 and monitor history, avoiding cross-process access to the global history file.

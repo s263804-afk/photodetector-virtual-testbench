@@ -1,3 +1,6 @@
+# English publication excerpt; not a verbatim local transcript.
+# Localized labels were translated and untranslated lines omitted.
+# Original transcript SHA256: 6d76db40b28f8987e1503c4dfdfe8a6db868f2521c13dfe9bea2d7205958aea0
 Verified arm: 864c0c8815857d68a1bbba2e5e2782255bb922845c71c97636004a3d74f60986
 Verified renode: 18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db
 Verified dotnet: 330ddd2665b43cd2e428216a0d8ea1ac7bb19b5434fdc530e62010dc3b52823a620bf95489d628e1ed6f5122401793ee4887cca4a019122361a1231497f632ee
@@ -14,18 +17,18 @@ Successfully installed cmake-4.4.4 ninja-1.13.2
 [notice] A new release of pip is available: 24.2 -> 26.3
 [notice] To update, run: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.local\fresh-551ea13be9a34b62a362e56cd239f42b\.venv\Scripts\python.exe -m pip install --upgrade pip
 
-欢迎使用 .NET 10.0!
+# Localized diagnostic line omitted (original line 17).
 ---------------------
-SDK 版本: 10.0.404
+# Localized diagnostic line omitted (original line 19).
 
 ----------------
-编写第一个应用: https://aka.ms/dotnet-hello-world
-了解新增功能: https://aka.ms/dotnet-whats-new
-浏览文档: https://aka.ms/dotnet-docs
-报告问题并在 GitHub 上查找来源: https://github.com/dotnet/core
-使用 "dotnet --help" 查看可用命令或访问: https://aka.ms/dotnet-cli
+# Localized diagnostic line omitted (original line 22).
+# Localized diagnostic line omitted (original line 23).
+# Localized diagnostic line omitted (original line 24).
+# Localized diagnostic line omitted (original line 25).
+# Localized diagnostic line omitted (original line 26).
 --------------------------------------------------------------------------------------
-  正在确定要还原的项目…
-  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.local\fresh-551ea13be9a34b62a362e56cd239f42b\host\PhotoBench.Core\PhotoBench.Core.csproj (用时 57 毫秒)。
-  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.local\fresh-551ea13be9a34b62a362e56cd239f42b\host\PhotoBench.Cli\PhotoBench.Cli.csproj (用时 59 毫秒)。
-  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.local\fresh-551ea13be9a34b62a362e56cd239f42b\host\PhotoBench.Tests\PhotoBench.Tests.csproj (用时 167 毫秒)。
+  Determining projects to restore...
+  Restored C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.local\fresh-551ea13be9a34b62a362e56cd239f42b\host\PhotoBench.Core\PhotoBench.Core.csproj (elapsed 57 ms).
+  Restored C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.local\fresh-551ea13be9a34b62a362e56cd239f42b\host\PhotoBench.Cli\PhotoBench.Cli.csproj (elapsed 59 ms).
+  Restored C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.local\fresh-551ea13be9a34b62a362e56cd239f42b\host\PhotoBench.Tests\PhotoBench.Tests.csproj (elapsed 167 ms).
