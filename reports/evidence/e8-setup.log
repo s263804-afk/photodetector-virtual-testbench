@@ -1,0 +1,13 @@
+Verified arm: 864c0c8815857d68a1bbba2e5e2782255bb922845c71c97636004a3d74f60986
+Verified renode: 18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db
+Verified dotnet: 330ddd2665b43cd2e428216a0d8ea1ac7bb19b5434fdc530e62010dc3b52823a620bf95489d628e1ed6f5122401793ee4887cca4a019122361a1231497f632ee
+Verified zig: b03f477a1943673e02aca0f570e8030dffd536ce1f45cbc4d3326ec31159562e
+Requirement already satisfied: cmake==4.4.4 in c:\users\rog\documents\chatgpt\sql, stm32\projects\photodetector-virtual-testbench\.venv\lib\site-packages (from -r C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\tools-requirements.txt (line 1)) (4.4.4)
+Requirement already satisfied: ninja==1.13.2 in c:\users\rog\documents\chatgpt\sql, stm32\projects\photodetector-virtual-testbench\.venv\lib\site-packages (from -r C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\tools-requirements.txt (line 2)) (1.13.2)
+
+[notice] A new release of pip is available: 24.2 -> 26.3
+[notice] To update, run: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.venv\Scripts\python.exe -m pip install --upgrade pip
+  正在确定要还原的项目…
+  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\PhotoBench.Core.csproj (用时 62 毫秒)。
+  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\PhotoBench.Cli.csproj (用时 62 毫秒)。
+  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\PhotoBench.Tests.csproj (用时 145 毫秒)。

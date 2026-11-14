@@ -1,0 +1,22 @@
+{
+  "provenance": "SYNTHETIC_PROTOCOL_GOLDENS",
+  "reference": "Python binascii.crc_hqx init FFFF; independently known 123456789=29B1",
+  "frames": [
+    {
+      "body": "1|0|HELLO|-",
+      "frame": "1|0|HELLO|-|CB9D\n"
+    },
+    {
+      "body": "1|1|PING|-",
+      "frame": "1|1|PING|-|CFA9\n"
+    },
+    {
+      "body": "1|3|FEED|124,869,4095",
+      "frame": "1|3|FEED|124,869,4095|643E\n"
+    },
+    {
+      "body": "1|3|DATA|0;124:124:0;869:496:0;4095:1696:2",
+      "frame": "1|3|DATA|0;124:124:0;869:496:0;4095:1696:2|609D\n"
+    }
+  ]
+}

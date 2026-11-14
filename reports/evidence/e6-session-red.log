@@ -1,0 +1,87 @@
+  PhotoBench.Core -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\bin\Debug\net10.0\PhotoBench.Core.dll
+  PhotoBench.Tests -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll
+C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0)的测试运行
+总共 1 个测试文件与指定模式相匹配。
+[xUnit.net 00:00:00.23]     PhotoBench.Tests.SessionTests.CancellationDuringOrAfterWriteIsIndeterminate(duringWrite: True) [FAIL]
+[xUnit.net 00:00:00.23]     PhotoBench.Tests.SessionTests.CancellationDuringOrAfterWriteIsIndeterminate(duringWrite: False) [FAIL]
+[xUnit.net 00:00:00.24]     PhotoBench.Tests.SessionTests.ThreeLostRepliesCloseSessionWithoutCrossSessionReplay [FAIL]
+[xUnit.net 00:00:00.24]     PhotoBench.Tests.SessionTests.SemanticErrorConsumesSequenceButKeepsSession [FAIL]
+[xUnit.net 00:00:00.24]     PhotoBench.Tests.SessionTests.RetryReusesExactBytesAndAcceptsFragmentedMatchingReply [FAIL]
+[xUnit.net 00:00:00.24]     PhotoBench.Tests.SessionTests.DisconnectAbortsAndBadCrcReplyIsIgnored [FAIL]
+[xUnit.net 00:00:00.24]     PhotoBench.Tests.SessionTests.CancellationBeforeWritePreservesSessionAndSequence [FAIL]
+[xUnit.net 00:00:00.24]     PhotoBench.Tests.SessionTests.ResetOrSequenceErrorInvalidatesSession(error: "ERR_SEQUENCE") [FAIL]
+  失败 PhotoBench.Tests.SessionTests.CancellationDuringOrAfterWriteIsIndeterminate(duringWrite: True) [7 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.CancellationDuringOrAfterWriteIsIndeterminate(Boolean duringWrite) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 87
+   at PhotoBench.Tests.SessionTests.CancellationDuringOrAfterWriteIsIndeterminate(Boolean duringWrite) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 93
+--- End of stack trace from previous location ---
+  失败 PhotoBench.Tests.SessionTests.CancellationDuringOrAfterWriteIsIndeterminate(duringWrite: False) [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.CancellationDuringOrAfterWriteIsIndeterminate(Boolean duringWrite) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 87
+   at PhotoBench.Tests.SessionTests.CancellationDuringOrAfterWriteIsIndeterminate(Boolean duringWrite) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 93
+--- End of stack trace from previous location ---
+  失败 PhotoBench.Tests.SessionTests.ThreeLostRepliesCloseSessionWithoutCrossSessionReplay [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.ThreeLostRepliesCloseSessionWithoutCrossSessionReplay() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 64
+   at PhotoBench.Tests.SessionTests.ThreeLostRepliesCloseSessionWithoutCrossSessionReplay() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 69
+--- End of stack trace from previous location ---
+  失败 PhotoBench.Tests.SessionTests.SemanticErrorConsumesSequenceButKeepsSession [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.SemanticErrorConsumesSequenceButKeepsSession() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 109
+   at PhotoBench.Tests.SessionTests.SemanticErrorConsumesSequenceButKeepsSession() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 112
+--- End of stack trace from previous location ---
+  失败 PhotoBench.Tests.SessionTests.RetryReusesExactBytesAndAcceptsFragmentedMatchingReply [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.RetryReusesExactBytesAndAcceptsFragmentedMatchingReply() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 48
+   at PhotoBench.Tests.SessionTests.RetryReusesExactBytesAndAcceptsFragmentedMatchingReply() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 58
+--- End of stack trace from previous location ---
+  失败 PhotoBench.Tests.SessionTests.DisconnectAbortsAndBadCrcReplyIsIgnored [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.DisconnectAbortsAndBadCrcReplyIsIgnored() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 118
+   at PhotoBench.Tests.SessionTests.DisconnectAbortsAndBadCrcReplyIsIgnored() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 124
+--- End of stack trace from previous location ---
+  失败 PhotoBench.Tests.SessionTests.CancellationBeforeWritePreservesSessionAndSequence [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.CancellationBeforeWritePreservesSessionAndSequence() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 75
+   at PhotoBench.Tests.SessionTests.CancellationBeforeWritePreservesSessionAndSequence() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 80
+--- End of stack trace from previous location ---
+  失败 PhotoBench.Tests.SessionTests.ResetOrSequenceErrorInvalidatesSession(error: "ERR_SEQUENCE") [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+[xUnit.net 00:00:00.26]     PhotoBench.Tests.SessionTests.ResetOrSequenceErrorInvalidatesSession(error: "ERR_SESSION") [FAIL]
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.ResetOrSequenceErrorInvalidatesSession(String error) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 100
+   at PhotoBench.Tests.SessionTests.ResetOrSequenceErrorInvalidatesSession(String error) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 103
+--- End of stack trace from previous location ---
+  失败 PhotoBench.Tests.SessionTests.ResetOrSequenceErrorInvalidatesSession(error: "ERR_SESSION") [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 22
+   at PhotoBench.Tests.SessionTests.ResetOrSequenceErrorInvalidatesSession(String error) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 100
+   at PhotoBench.Tests.SessionTests.ResetOrSequenceErrorInvalidatesSession(String error) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\SessionTests.cs:line 103
+--- End of stack trace from previous location ---
+
+失败!  - 失败:     9，通过:     1，已跳过:     0，总计:    10，持续时间: 55 ms - PhotoBench.Tests.dll (net10.0)

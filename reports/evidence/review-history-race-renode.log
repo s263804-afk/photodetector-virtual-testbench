@@ -1,0 +1,49 @@
+[14:58:49.6857] [INFO] Loaded monitor commands from: C:\Users\ROG\AppData\Local\PortfolioTools\renode-1.17.0\renode_1.17.0-portable\scripts/monitor.py
+Renode, version 1.17.0 (1.17.0+20260906gitf1dd1b4af)
+
+
+(monitor) i $CWD/simulation/platform.resc
+
+[14:58:49.7158] [ERROR] The process cannot access the file 'C:\Users\ROG\AppData\Roaming\renode\history' because it is being used by another process.
+
+       at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+
+       at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+
+       at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+
+       at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+
+       at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+
+       at System.IO.File.WriteAllLines(String path, IEnumerable`1 contents, Encoding encoding)
+
+       at AntShell.CommandHistory.Save(String path)
+
+       at AntShell.Shell.HandleCommand(String cmd, ICommandInteraction ic)
+
+       at AntShell.CommandLine.HandleControlSequence(ControlSequence seq)
+
+       at AntShell.Terminal.NavigableTerminalEmulator.HandleInput(Object input)
+
+       at AntShell.Terminal.NavigableTerminalEmulator.Run(Boolean stopOnError)
+
+       at AntShell.Shell.Start(Boolean stopOnError)
+
+       at Antmicro.Renode.UI.CommandLineInterface.<>c__DisplayClass0_1.<Run>b__3(Object x)
+
+    
+Unhandled exception. System.IO.IOException: The process cannot access the file 'C:\Users\ROG\AppData\Roaming\renode\history' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.WriteAllLines(String path, IEnumerable`1 contents, Encoding encoding)
+   at AntShell.CommandHistory.Save(String path)
+   at AntShell.Shell.HandleCommand(String cmd, ICommandInteraction ic)
+   at AntShell.CommandLine.HandleControlSequence(ControlSequence seq)
+   at AntShell.Terminal.NavigableTerminalEmulator.HandleInput(Object input)
+   at AntShell.Terminal.NavigableTerminalEmulator.Run(Boolean stopOnError)
+   at AntShell.Shell.Start(Boolean stopOnError)
+   at Antmicro.Renode.UI.CommandLineInterface.<>c__DisplayClass0_1.<Run>b__3(Object x)

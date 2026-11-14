@@ -1,0 +1,21 @@
+// Project-owned STM32F4 subset derived from Renode 1.17.0 platform definitions.
+// F407VG-sized main SRAM/flash; no claim of a complete physical Discovery board.
+sram: Memory.MappedMemory @ sysbus 0x20000000
+    size: 0x20000
+flash: Memory.MappedMemory @ sysbus 0x08000000
+    size: 0x100000
+nvic: IRQControllers.NVIC @ sysbus 0xE000E000
+    priorityMask: 0xF0
+    systickFrequency: 16000000
+    IRQ -> cpu@0
+cpu: CPU.CortexM @ sysbus
+    cpuType: "cortex-m4"
+    nvic: nvic
+usart2: UART.STM32_UART @ sysbus <0x40004400, +0x100>
+    -> nvic@38
+gpioPortA: GPIOPort.STM32_GPIOPort @ sysbus <0x40020000, +0x400>
+    numberOfAFs: 16
+rtc: Timers.STM32F4_RTC @ sysbus 0x40002800
+    AlarmIRQ -> nvic@41
+rcc: Miscellaneous.STM32F4_RCC @ sysbus 0x40023800
+    rtcPeripheral: rtc

@@ -1,0 +1,21 @@
+{
+  "status": "TECHNICALLY_VERIFIED_REVIEW_FIXED",
+  "net_tests_passed": 49,
+  "net_tests_skipped": 0,
+  "ctest_executables_passed": 3,
+  "host_c_assertions": 555,
+  "host_ubsan_device_assertions": 221,
+  "scenarios_passed": 6,
+  "sample_tuples": 3968,
+  "elf_sha256": "138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241",
+  "fresh_reproduction": "PASS_WITH_SCOPE_DISCLOSED",
+  "remote_ci": "CONFIGURED_NOT_YET_OBSERVED",
+  "personal_mastery": "PENDING_LEARNER",
+  "publication": "See repository commit and delivery manifest for current publication status",
+  "review": "2 Important findings fixed with3 RED-to-GREEN regressions; main/fresh49/49",
+  "deferred_minors": [
+    "HELLO exact protocol/mode field parsing"
+  ],
+  "simulator_history": "PRIVATE_PER_LAUNCH",
+  "repository_url": "https://github.com/s263804-afk/photodetector-virtual-testbench"
+}

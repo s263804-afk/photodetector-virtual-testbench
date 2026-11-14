@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\scripts\probe-emulator.py", line 5, in <module>
+    with socket.create_connection(("127.0.0.1", 12345), timeout=5) as connection:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\devtools\Anaconda3-CodeTou\Lib\socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "D:\devtools\Anaconda3-CodeTou\Lib\socket.py", line 850, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] ����Ŀ�����������ܾ����޷����ӡ�

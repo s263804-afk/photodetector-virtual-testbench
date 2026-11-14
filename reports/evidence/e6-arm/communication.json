@@ -1,0 +1,558 @@
+{
+  "Checks": [
+    {
+      "Name": "FRAGMENTED_REQUEST",
+      "Passed": true,
+      "Detail": "HELLO split across real TCP writes"
+    },
+    {
+      "Name": "DUPLICATE_FEED",
+      "Passed": true,
+      "Detail": "0;124:124:0;869:496:0;4095:1696:2"
+    },
+    {
+      "Name": "BAD_CRC_DROPPED",
+      "Passed": true,
+      "Detail": "state=RUNNING;processed=3;crc_errors=1;overflow_errors=1;errors=0"
+    },
+    {
+      "Name": "OVERFLOW_RECOVERY",
+      "Passed": true,
+      "Detail": "state=RUNNING;processed=3;crc_errors=1;overflow_errors=1;errors=0"
+    },
+    {
+      "Name": "LOST_FEED_REPLY_EXACTLY_ONCE",
+      "Passed": true,
+      "Detail": "state=RUNNING;processed=3;crc_errors=1;overflow_errors=1;errors=0"
+    },
+    {
+      "Name": "FRAGMENTED_RESPONSE",
+      "Passed": true,
+      "Detail": "Proxy emitted at most3 bytes per delayed write"
+    },
+    {
+      "Name": "ALL_REPLIES_LOST_INDETERMINATE",
+      "Passed": true,
+      "Detail": "Three actual DATA replies discarded; no automatic reconnect/replay"
+    },
+    {
+      "Name": "POST_SEND_CANCELLATION",
+      "Passed": true,
+      "Detail": "Cancellation after real NetworkStream write completed"
+    },
+    {
+      "Name": "RESET_TCP_RETAINED",
+      "Passed": true,
+      "Detail": "Firmware reset via private monitor; next command must return ERR_SESSION on retained TCP"
+    },
+    {
+      "Name": "RECONNECT_NEW_HELLO",
+      "Passed": true,
+      "Detail": "New logical session, HELLO then STATUS sequence1: state=STOPPED;processed=0;crc_errors=0;overflow_errors=0;errors=1"
+    },
+    {
+      "Name": "TRANSPORT_DISCONNECT",
+      "Passed": true,
+      "Detail": "Actual TCP peers closed mid-session"
+    }
+  ],
+  "SessionIds": [
+    "a3053b5d-4219-4980-a135-8eb693280c96",
+    "e0f402fc-0028-457a-afba-c9a295145166",
+    "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+    "e2c75cdc-62c9-48cc-93e7-5016f713af89",
+    "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+    "d191de19-aa93-4a5b-80e1-0052db4664a0",
+    "e4080a3e-1407-4cda-9d62-00c041eb0f29"
+  ],
+  "Trace": [
+    {
+      "At": "2026-11-14T14:01:04.9090488+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "SEND",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "317C307C48454C4C4F7C2D7C434239440A"
+    },
+    {
+      "At": "2026-11-14T14:01:04.9577232+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "RESPONSE",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "HELLO:fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:04.9579381+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "SEND",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "317C317C53544152547C2D7C323844420A"
+    },
+    {
+      "At": "2026-11-14T14:01:04.9928292+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "RESPONSE",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "OK:-"
+    },
+    {
+      "At": "2026-11-14T14:01:04.9928393+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "SEND",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "317C327C464545447C3132342C3836392C343039357C424132310A"
+    },
+    {
+      "At": "2026-11-14T14:01:05.0462552+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "RESPONSE",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "DATA:0;124:124:0;869:496:0;4095:1696:2"
+    },
+    {
+      "At": "2026-11-14T14:01:05.0462662+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "SEND",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "317C327C464545447C3132342C3836392C343039357C424132310A"
+    },
+    {
+      "At": "2026-11-14T14:01:05.1000963+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "RESPONSE",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "DATA:0;124:124:0;869:496:0;4095:1696:2"
+    },
+    {
+      "At": "2026-11-14T14:01:05.1001445+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "SEND_GARBAGE",
+      "Sequence": 3,
+      "Attempt": 1,
+      "Detail": "317C337C50494E477C2D7C343041460A"
+    },
+    {
+      "At": "2026-11-14T14:01:05.100166+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "SEND",
+      "Sequence": 3,
+      "Attempt": 1,
+      "Detail": "317C337C50494E477C2D7C343030460A"
+    },
+    {
+      "At": "2026-11-14T14:01:06.3922914+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "RESPONSE",
+      "Sequence": 3,
+      "Attempt": 1,
+      "Detail": "PONG:-"
+    },
+    {
+      "At": "2026-11-14T14:01:06.392302+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "SEND",
+      "Sequence": 4,
+      "Attempt": 1,
+      "Detail": "317C347C5354415455537C2D7C363539440A"
+    },
+    {
+      "At": "2026-11-14T14:01:06.4064046+00:00",
+      "SessionId": "a3053b5d-4219-4980-a135-8eb693280c96",
+      "Event": "RESPONSE",
+      "Sequence": 4,
+      "Attempt": 1,
+      "Detail": "STATUS:state=RUNNING;processed=3;crc_errors=1;overflow_errors=1;errors=0"
+    },
+    {
+      "At": "2026-11-14T14:01:06.4072833+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "SEND",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "317C307C48454C4C4F7C2D7C434239440A"
+    },
+    {
+      "At": "2026-11-14T14:01:06.650423+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "RESPONSE",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "HELLO:fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:06.6504314+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "SESSION_OPEN",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:06.6504713+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "SEND",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "317C317C53544152547C2D7C323844420A"
+    },
+    {
+      "At": "2026-11-14T14:01:06.7272684+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "RESPONSE",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "OK:-"
+    },
+    {
+      "At": "2026-11-14T14:01:06.7272855+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "SEND",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "317C327C464545447C3132342C3836392C343039357C424132310A"
+    },
+    {
+      "At": "2026-11-14T14:01:07.2278606+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "TIMEOUT",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "No matching response before deadline"
+    },
+    {
+      "At": "2026-11-14T14:01:07.2278664+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "RETRY",
+      "Sequence": 2,
+      "Attempt": 2,
+      "Detail": "317C327C464545447C3132342C3836392C343039357C424132310A"
+    },
+    {
+      "At": "2026-11-14T14:01:07.4290955+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "RESPONSE",
+      "Sequence": 2,
+      "Attempt": 2,
+      "Detail": "DATA:0;124:124:0;869:496:0;4095:1696:2"
+    },
+    {
+      "At": "2026-11-14T14:01:07.429115+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "SEND",
+      "Sequence": 3,
+      "Attempt": 1,
+      "Detail": "317C337C5354415455537C2D7C373936370A"
+    },
+    {
+      "At": "2026-11-14T14:01:07.8455161+00:00",
+      "SessionId": "e0f402fc-0028-457a-afba-c9a295145166",
+      "Event": "RESPONSE",
+      "Sequence": 3,
+      "Attempt": 1,
+      "Detail": "STATUS:state=RUNNING;processed=3;crc_errors=1;overflow_errors=1;errors=0"
+    },
+    {
+      "At": "2026-11-14T14:01:07.8469911+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "SEND",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "317C307C48454C4C4F7C2D7C434239440A"
+    },
+    {
+      "At": "2026-11-14T14:01:07.8603708+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "RESPONSE",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "HELLO:fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:07.8603768+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "SESSION_OPEN",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:07.8603899+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "SEND",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "317C317C53544152547C2D7C323844420A"
+    },
+    {
+      "At": "2026-11-14T14:01:07.8745675+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "RESPONSE",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "OK:-"
+    },
+    {
+      "At": "2026-11-14T14:01:07.8745909+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "SEND",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "317C327C464545447C3132347C373232300A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.0252662+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "TIMEOUT",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "No matching response before deadline"
+    },
+    {
+      "At": "2026-11-14T14:01:08.0252723+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "RETRY",
+      "Sequence": 2,
+      "Attempt": 2,
+      "Detail": "317C327C464545447C3132347C373232300A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.184651+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "TIMEOUT",
+      "Sequence": 2,
+      "Attempt": 2,
+      "Detail": "No matching response before deadline"
+    },
+    {
+      "At": "2026-11-14T14:01:08.1846606+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "RETRY",
+      "Sequence": 2,
+      "Attempt": 3,
+      "Detail": "317C327C464545447C3132347C373232300A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3383724+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "TIMEOUT",
+      "Sequence": 2,
+      "Attempt": 3,
+      "Detail": "No matching response before deadline"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3383779+00:00",
+      "SessionId": "fb3a6b29-20c0-4814-9a3b-2608ff325a1d",
+      "Event": "SESSION_INVALIDATED",
+      "Sequence": 2,
+      "Attempt": 0,
+      "Detail": "RETRIES_EXHAUSTED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3399634+00:00",
+      "SessionId": "e2c75cdc-62c9-48cc-93e7-5016f713af89",
+      "Event": "SEND",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "317C307C48454C4C4F7C2D7C434239440A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3535068+00:00",
+      "SessionId": "e2c75cdc-62c9-48cc-93e7-5016f713af89",
+      "Event": "RESPONSE",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "HELLO:fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3535132+00:00",
+      "SessionId": "e2c75cdc-62c9-48cc-93e7-5016f713af89",
+      "Event": "SESSION_OPEN",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3535262+00:00",
+      "SessionId": "e2c75cdc-62c9-48cc-93e7-5016f713af89",
+      "Event": "SEND",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "317C317C53544152547C2D7C323844420A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3652102+00:00",
+      "SessionId": "e2c75cdc-62c9-48cc-93e7-5016f713af89",
+      "Event": "RESPONSE",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "OK:-"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3652386+00:00",
+      "SessionId": "e2c75cdc-62c9-48cc-93e7-5016f713af89",
+      "Event": "SEND",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "317C327C464545447C3132347C373232300A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3654123+00:00",
+      "SessionId": "e2c75cdc-62c9-48cc-93e7-5016f713af89",
+      "Event": "SESSION_INVALIDATED",
+      "Sequence": 2,
+      "Attempt": 0,
+      "Detail": "CANCELLED_AFTER_POSSIBLE_TRANSMISSION"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3663337+00:00",
+      "SessionId": "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+      "Event": "SEND",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "317C307C48454C4C4F7C2D7C434239440A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3802078+00:00",
+      "SessionId": "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+      "Event": "IGNORE_SEQUENCE",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "DATA"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3944102+00:00",
+      "SessionId": "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+      "Event": "RESPONSE",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "HELLO:fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3944175+00:00",
+      "SessionId": "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+      "Event": "SESSION_OPEN",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.3944367+00:00",
+      "SessionId": "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+      "Event": "SEND",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "317C317C53544152547C2D7C323844420A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.409111+00:00",
+      "SessionId": "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+      "Event": "RESPONSE",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "OK:-"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7116777+00:00",
+      "SessionId": "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+      "Event": "SEND",
+      "Sequence": 2,
+      "Attempt": 1,
+      "Detail": "317C327C50494E477C2D7C303744430A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.724295+00:00",
+      "SessionId": "d60e360e-ff6d-4632-95a4-1bf19cf621dd",
+      "Event": "SESSION_INVALIDATED",
+      "Sequence": 2,
+      "Attempt": 0,
+      "Detail": "ERR_SESSION"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7252824+00:00",
+      "SessionId": "d191de19-aa93-4a5b-80e1-0052db4664a0",
+      "Event": "SEND",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "317C307C48454C4C4F7C2D7C434239440A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7400567+00:00",
+      "SessionId": "d191de19-aa93-4a5b-80e1-0052db4664a0",
+      "Event": "RESPONSE",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "HELLO:fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7400633+00:00",
+      "SessionId": "d191de19-aa93-4a5b-80e1-0052db4664a0",
+      "Event": "SESSION_OPEN",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7400812+00:00",
+      "SessionId": "d191de19-aa93-4a5b-80e1-0052db4664a0",
+      "Event": "SEND",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "317C317C5354415455537C2D7C413745440A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7527905+00:00",
+      "SessionId": "d191de19-aa93-4a5b-80e1-0052db4664a0",
+      "Event": "RESPONSE",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "STATUS:state=STOPPED;processed=0;crc_errors=0;overflow_errors=0;errors=1"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7537754+00:00",
+      "SessionId": "e4080a3e-1407-4cda-9d62-00c041eb0f29",
+      "Event": "SEND",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "317C307C48454C4C4F7C2D7C434239440A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7707674+00:00",
+      "SessionId": "e4080a3e-1407-4cda-9d62-00c041eb0f29",
+      "Event": "RESPONSE",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "HELLO:fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7707733+00:00",
+      "SessionId": "e4080a3e-1407-4cda-9d62-00c041eb0f29",
+      "Event": "SESSION_OPEN",
+      "Sequence": 0,
+      "Attempt": 1,
+      "Detail": "fw=1.0.0;protocol=1;mode=VIRTUAL_FEED"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7709467+00:00",
+      "SessionId": "e4080a3e-1407-4cda-9d62-00c041eb0f29",
+      "Event": "SEND",
+      "Sequence": 1,
+      "Attempt": 1,
+      "Detail": "317C317C50494E477C2D7C434641390A"
+    },
+    {
+      "At": "2026-11-14T14:01:08.7818501+00:00",
+      "SessionId": "e4080a3e-1407-4cda-9d62-00c041eb0f29",
+      "Event": "SESSION_INVALIDATED",
+      "Sequence": 1,
+      "Attempt": 0,
+      "Detail": "TRANSPORT_FAILURE:Unable to read data from the transport connection: \u4F60\u7684\u4E3B\u673A\u4E2D\u7684\u8F6F\u4EF6\u4E2D\u6B62\u4E86\u4E00\u4E2A\u5DF2\u5EFA\u7ACB\u7684\u8FDE\u63A5\u3002."
+    }
+  ]
+}

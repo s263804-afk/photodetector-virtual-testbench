@@ -1,0 +1,337 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Photodetector virtual test report</title><style>body{font:16px system-ui;max-width:1100px;margin:40px auto;padding:0 24px;color:#18283b;background:#f6f8fb}h1,h2{color:#123d66}.card{background:white;padding:24px;border-radius:12px;margin:18px 0;border:1px solid #dbe4ee}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}code{overflow-wrap:anywhere}.PASS{color:#127b46}.FAIL,.INCOMPLETE{color:#a42f32}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #dde3ea;text-align:left}</style><h1>Photodetector virtual test bench</h1><p class="PASS"><b>PASS</b> · 2026-11-14T14:01:29.6251160+00:00</p><div class="card"><p>ARM instructions execute in Renode. Synthetic codes enter a VIRTUAL_FEED software boundary; no ADC, optical device or physical timing is validated.</p><p>Independent portfolio project by Weitong Liu, developed with AI assistance.</p><p>Firmware 1.0.0 · host PhotoBench1.0.0 / .NET 10.0.15</p><code>ELF SHA256 138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241</code><p>3968 actual UART sample results · wall time 18.203 s. Model spacing is separate from wall time.</p></div><section class="card"><h2>dark — <span class="PASS">PASS</span></h2><p>Every raw/filtered/flag tuple matched the independent reference.</p><h3>Observed metrics</h3><pre>{
+  &quot;summary&quot;: {
+    &quot;raw&quot;: {
+      &quot;count&quot;: 1024,
+      &quot;meanV&quot;: 0.09992673992673992,
+      &quot;sampleStddevV&quot;: 0,
+      &quot;status&quot;: &quot;VALID&quot;
+    },
+    &quot;filteredSettled&quot;: {
+      &quot;count&quot;: 1009,
+      &quot;meanV&quot;: 0.09992673992673992,
+      &quot;sampleStddevV&quot;: 0,
+      &quot;status&quot;: &quot;VALID&quot;
+    },
+    &quot;discardedStartupSamples&quot;: 15,
+    &quot;clippingRate&quot;: 0,
+    &quot;baselineSubtractedV&quot;: 0
+  }
+}</pre><h3>Project test limits</h3><pre>{
+  &quot;rawCode&quot;: 124,
+  &quot;baselineToleranceV&quot;: 0.0008058608058608059
+}</pre><p>Sessions: 2ca0868b-b7b9-4492-abc6-2f37a987f5ad</p></section><section class="card"><h2>light_step — <span class="PASS">PASS</span></h2><p>Every raw/filtered/flag tuple matched the independent reference.</p><h3>Observed metrics</h3><pre>{
+  &quot;firstChangedFiltered&quot;: 170,
+  &quot;sixteenthChangedFiltered&quot;: 869,
+  &quot;input&quot;: &quot;64x124 (0uW), then64x869 (10uW)&quot;
+}</pre><h3>Project test limits</h3><pre>{
+  &quot;firstChangedFiltered&quot;: 170,
+  &quot;sixteenthChangedFiltered&quot;: 869
+}</pre><p>Sessions: 55e7b830-26e6-45a0-b6dd-59838878e565</p></section><section class="card"><h2>noise — <span class="PASS">PASS</span></h2><p>Every raw/filtered/flag tuple matched the independent reference. Noise fixture and Python sample statistics are saved separately; no ideal sqrt(16) reduction claim.</p><h3>Observed metrics</h3><pre>{
+  &quot;summary&quot;: {
+    &quot;raw&quot;: {
+      &quot;count&quot;: 1024,
+      &quot;meanV&quot;: 1.3000368446657475,
+      &quot;sampleStddevV&quot;: 0.0019175022009405489,
+      &quot;status&quot;: &quot;VALID&quot;
+    },
+    &quot;filteredSettled&quot;: {
+      &quot;count&quot;: 1009,
+      &quot;meanV&quot;: 1.2996386368834352,
+      &quot;sampleStddevV&quot;: 0.0005172524987257107,
+      &quot;status&quot;: &quot;VALID&quot;
+    },
+    &quot;discardedStartupSamples&quot;: 15,
+    &quot;clippingRate&quot;: 0,
+    &quot;baselineSubtractedV&quot;: 1.2001101047390077
+  },
+  &quot;referenceErrorsV&quot;: {
+    &quot;rawMeanErrorV&quot;: 3.3306690738754696E-15,
+    &quot;rawStdErrorV&quot;: 1.951563910473908E-18,
+    &quot;filtered_settledMeanErrorV&quot;: 1.5543122344752192E-15,
+    &quot;filtered_settledStdErrorV&quot;: 5.074066167232161E-17
+  }
+}</pre><h3>Project test limits</h3><pre>{
+  &quot;referenceToleranceV&quot;: 1E-06
+}</pre><p>Sessions: bd3428e5-04d4-490e-be8f-0d2420bba10a</p></section><section class="card"><h2>saturation — <span class="PASS">PASS</span></h2><p>Every raw/filtered/flag tuple matched the independent reference.</p><h3>Observed metrics</h3><pre>{
+  &quot;summary&quot;: {
+    &quot;raw&quot;: {
+      &quot;count&quot;: 256,
+      &quot;meanV&quot;: 3.3,
+      &quot;sampleStddevV&quot;: 0,
+      &quot;status&quot;: &quot;VALID&quot;
+    },
+    &quot;filteredSettled&quot;: {
+      &quot;count&quot;: 241,
+      &quot;meanV&quot;: 3.3,
+      &quot;sampleStddevV&quot;: 0,
+      &quot;status&quot;: &quot;VALID&quot;
+    },
+    &quot;discardedStartupSamples&quot;: 15,
+    &quot;clippingRate&quot;: 1,
+    &quot;baselineSubtractedV&quot;: 3.20007326007326
+  },
+  &quot;highFlagCount&quot;: 256,
+  &quot;excludedFromLinearity&quot;: true
+}</pre><h3>Project test limits</h3><pre>{
+  &quot;rawCode&quot;: 4095,
+  &quot;allHighFlags&quot;: true
+}</pre><p>Sessions: 34fed293-d147-4471-93ab-ad2fdf32537b</p></section><section class="card"><h2>linearity — <span class="PASS">PASS</span></h2><p>Every raw/filtered/flag tuple matched the independent reference.</p><h3>Observed metrics</h3><pre>{
+  &quot;fit&quot;: {
+    &quot;slopeVPerUw&quot;: 0.06000015423173317,
+    &quot;interceptV&quot;: 0.09996067090803962,
+    &quot;included&quot;: 6,
+    &quot;excluded&quot;: 1
+  },
+  &quot;levels&quot;: [
+    {
+      &quot;powerUw&quot;: 0,
+      &quot;summary&quot;: {
+        &quot;raw&quot;: {
+          &quot;count&quot;: 256,
+          &quot;meanV&quot;: 0.09992673992673992,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;filteredSettled&quot;: {
+          &quot;count&quot;: 241,
+          &quot;meanV&quot;: 0.09992673992673992,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;discardedStartupSamples&quot;: 15,
+        &quot;clippingRate&quot;: 0,
+        &quot;baselineSubtractedV&quot;: 0
+      }
+    },
+    {
+      &quot;powerUw&quot;: 5,
+      &quot;summary&quot;: {
+        &quot;raw&quot;: {
+          &quot;count&quot;: 256,
+          &quot;meanV&quot;: 0.3997069597069597,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;filteredSettled&quot;: {
+          &quot;count&quot;: 241,
+          &quot;meanV&quot;: 0.3997069597069597,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;discardedStartupSamples&quot;: 15,
+        &quot;clippingRate&quot;: 0,
+        &quot;baselineSubtractedV&quot;: 0.29978021978021974
+      }
+    },
+    {
+      &quot;powerUw&quot;: 10,
+      &quot;summary&quot;: {
+        &quot;raw&quot;: {
+          &quot;count&quot;: 256,
+          &quot;meanV&quot;: 0.7002930402930403,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;filteredSettled&quot;: {
+          &quot;count&quot;: 241,
+          &quot;meanV&quot;: 0.7002930402930403,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;discardedStartupSamples&quot;: 15,
+        &quot;clippingRate&quot;: 0,
+        &quot;baselineSubtractedV&quot;: 0.6003663003663003
+      }
+    },
+    {
+      &quot;powerUw&quot;: 20,
+      &quot;summary&quot;: {
+        &quot;raw&quot;: {
+          &quot;count&quot;: 256,
+          &quot;meanV&quot;: 1.2998534798534798,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;filteredSettled&quot;: {
+          &quot;count&quot;: 241,
+          &quot;meanV&quot;: 1.2998534798534798,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;discardedStartupSamples&quot;: 15,
+        &quot;clippingRate&quot;: 0,
+        &quot;baselineSubtractedV&quot;: 1.19992673992674
+      }
+    },
+    {
+      &quot;powerUw&quot;: 30,
+      &quot;summary&quot;: {
+        &quot;raw&quot;: {
+          &quot;count&quot;: 256,
+          &quot;meanV&quot;: 1.9002197802197802,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;filteredSettled&quot;: {
+          &quot;count&quot;: 241,
+          &quot;meanV&quot;: 1.9002197802197802,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;discardedStartupSamples&quot;: 15,
+        &quot;clippingRate&quot;: 0,
+        &quot;baselineSubtractedV&quot;: 1.8002930402930404
+      }
+    },
+    {
+      &quot;powerUw&quot;: 40,
+      &quot;summary&quot;: {
+        &quot;raw&quot;: {
+          &quot;count&quot;: 256,
+          &quot;meanV&quot;: 2.4997802197802192,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;filteredSettled&quot;: {
+          &quot;count&quot;: 241,
+          &quot;meanV&quot;: 2.4997802197802192,
+          &quot;sampleStddevV&quot;: 0,
+          &quot;status&quot;: &quot;VALID&quot;
+        },
+        &quot;discardedStartupSamples&quot;: 15,
+        &quot;clippingRate&quot;: 0,
+        &quot;baselineSubtractedV&quot;: 2.3998534798534794
+      }
+    }
+  ],
+  &quot;excludedPowerLevelsUw&quot;: [
+    60
+  ]
+}</pre><h3>Project test limits</h3><pre>{
+  &quot;slopeVPerUw&quot;: 0.06,
+  &quot;slopeTolerance&quot;: 0.0005,
+  &quot;interceptV&quot;: 0.1,
+  &quot;interceptToleranceV&quot;: 0.002
+}</pre><p>Sessions: ca42ad72-0a61-4047-9278-039726449ff5, bbe9b0be-47da-49c6-a015-3f62adb43001, 6b8c2642-8f4f-4a19-b8d5-f282e3c14169, 0e0fbfc2-df9e-4dc3-a10a-e34a96e02f0a, 0c134b45-9f6c-4f85-83a0-df57cb32bd45, 0d0214d1-ef68-468e-9fa9-85d5bd07126b</p></section><section class="card"><h2>communication_recovery — <span class="PASS">PASS</span></h2><p>Deliberate byte-delivery faults on actual C#↔TCP↔ARM path; reset preserves TCP.</p><h3>Observed metrics</h3><pre>{
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;FRAGMENTED_REQUEST&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;HELLO split across real TCP writes&quot;
+    },
+    {
+      &quot;name&quot;: &quot;DUPLICATE_FEED&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;0;124:124:0;869:496:0;4095:1696:2&quot;
+    },
+    {
+      &quot;name&quot;: &quot;BAD_CRC_DROPPED&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;state=RUNNING;processed=3;crc_errors=1;overflow_errors=1;errors=0&quot;
+    },
+    {
+      &quot;name&quot;: &quot;OVERFLOW_RECOVERY&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;state=RUNNING;processed=3;crc_errors=1;overflow_errors=1;errors=0&quot;
+    },
+    {
+      &quot;name&quot;: &quot;LOST_FEED_REPLY_EXACTLY_ONCE&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;state=RUNNING;processed=3;crc_errors=1;overflow_errors=1;errors=0&quot;
+    },
+    {
+      &quot;name&quot;: &quot;FRAGMENTED_RESPONSE&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;Proxy emitted at most3 bytes per delayed write&quot;
+    },
+    {
+      &quot;name&quot;: &quot;ALL_REPLIES_LOST_INDETERMINATE&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;Three actual DATA replies discarded; no automatic reconnect/replay&quot;
+    },
+    {
+      &quot;name&quot;: &quot;POST_SEND_CANCELLATION&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;Cancellation after real NetworkStream write completed&quot;
+    },
+    {
+      &quot;name&quot;: &quot;RESET_TCP_RETAINED&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;Firmware reset via private monitor; next command must return ERR_SESSION on retained TCP&quot;
+    },
+    {
+      &quot;name&quot;: &quot;RECONNECT_NEW_HELLO&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;New logical session, HELLO then STATUS sequence1: state=STOPPED;processed=0;crc_errors=0;overflow_errors=0;errors=1&quot;
+    },
+    {
+      &quot;name&quot;: &quot;TRANSPORT_DISCONNECT&quot;,
+      &quot;passed&quot;: true,
+      &quot;detail&quot;: &quot;Actual TCP peers closed mid-session&quot;
+    }
+  ]
+}</pre><h3>Project test limits</h3><pre>{
+  &quot;allRequiredChecks&quot;: &quot;PASS&quot;
+}</pre><p>Sessions: 3936fc7e-e931-46ab-b903-ff041d6994c0, 257be2e9-8985-4384-b8d6-ec9489c70089, 93015ef3-1d81-49c9-b05f-f84ff644e3bc, 3da7dbe3-0567-463e-aea5-ba1447eea5a3, d4e05fca-479e-4f64-93c0-808e566966ee, 94783bd3-c248-4980-a6d4-6d122d1b6ddb, c853411f-e95d-4109-8c18-344da25cc7db</p></section><section class="card"><h2>Reproduction metadata</h2><pre>{
+  &quot;firmwareVersion&quot;: &quot;1.0.0&quot;,
+  &quot;firmwareSha256&quot;: &quot;138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241&quot;,
+  &quot;hostVersion&quot;: &quot;PhotoBench1.0.0 / .NET 10.0.15&quot;,
+  &quot;toolVersions&quot;: {
+    &quot;recorded_at_utc&quot;: &quot;2026-11-14T00:06:50.803123\u002B00:00&quot;,
+    &quot;archives&quot;: {
+      &quot;renode&quot;: {
+        &quot;path&quot;: &quot;C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\renode-1.17.0\\renode.zip&quot;,
+        &quot;version&quot;: &quot;1.17.0&quot;,
+        &quot;algorithm&quot;: &quot;sha256&quot;,
+        &quot;hash&quot;: &quot;18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db&quot;
+      },
+      &quot;arm&quot;: {
+        &quot;path&quot;: &quot;C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\arm-14.3.rel1\\arm.zip&quot;,
+        &quot;version&quot;: &quot;14.3.Rel1 GCC14.3.1&quot;,
+        &quot;algorithm&quot;: &quot;sha256&quot;,
+        &quot;hash&quot;: &quot;864c0c8815857d68a1bbba2e5e2782255bb922845c71c97636004a3d74f60986&quot;
+      },
+      &quot;dotnet&quot;: {
+        &quot;path&quot;: &quot;C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\dotnet-10.0.404\\dotnet.zip&quot;,
+        &quot;version&quot;: &quot;SDK10.0.404 Runtime10.0.15&quot;,
+        &quot;algorithm&quot;: &quot;sha512&quot;,
+        &quot;hash&quot;: &quot;330ddd2665b43cd2e428216a0d8ea1ac7bb19b5434fdc530e62010dc3b52823a620bf95489d628e1ed6f5122401793ee4887cca4a019122361a1231497f632ee&quot;
+      },
+      &quot;zig&quot;: {
+        &quot;path&quot;: &quot;C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\zig-0.17.1\\zig.zip&quot;,
+        &quot;version&quot;: &quot;0.17.1 Clang22.1.8&quot;,
+        &quot;algorithm&quot;: &quot;sha256&quot;,
+        &quot;hash&quot;: &quot;b03f477a1943673e02aca0f570e8030dffd536ce1f45cbc4d3326ec31159562e&quot;
+      }
+    },
+    &quot;python&quot;: &quot;3.12.7&quot;,
+    &quot;cmake&quot;: &quot;4.4.4&quot;,
+    &quot;ninja&quot;: &quot;1.13.2&quot;,
+    &quot;simulator_vendor_runtime&quot;: &quot;.NET8.0.10&quot;,
+    &quot;host_application_runtime&quot;: &quot;.NET10.0.15&quot;,
+    &quot;platform&quot;: &quot;project-owned Cortex-M4 STM32F4 USART2 subset, F407VG flash/main-SRAM bounds&quot;,
+    &quot;e1_arm_elf_sha256&quot;: &quot;1802bda598598e7d69c2352dbb6f7d5f516be5f9b9bcb425c259ae6505a5e05c&quot;,
+    &quot;e2_filter_assertions&quot;: 245,
+    &quot;e2_ctest_executables_passed&quot;: 1
+  },
+  &quot;fixtureHashes&quot;: {
+    &quot;optical/noise-20uw.json&quot;: &quot;70990122628abf6062812f2405881dee4106c649fa7166d2a37a62c662814617&quot;,
+    &quot;protocol-golden.json&quot;: &quot;2726e426800636c54db45beffecfbd0bc4fb58852f10f1efef786efe1eca7401&quot;
+  },
+  &quot;config&quot;: {
+    &quot;responsivityAperW&quot;: 0.6,
+    &quot;transimpedanceOhm&quot;: 100000,
+    &quot;offsetV&quot;: 0.1,
+    &quot;referenceV&quot;: 3.3,
+    &quot;maximumCode&quot;: 4095,
+    &quot;filterWindow&quot;: 16,
+    &quot;modelSpacingMs&quot;: 1,
+    &quot;noiseSigmaV&quot;: 0.002,
+    &quot;seed&quot;: 20261112,
+    &quot;lowLimit&quot;: 16,
+    &quot;highLimit&quot;: 4079,
+    &quot;responseTimeoutMs&quot;: 2000,
+    &quot;maximumTotalAttempts&quot;: 3,
+    &quot;mode&quot;: &quot;VIRTUAL_FEED&quot;
+  }
+}</pre></section><p>Full machine-readable trace: report.json. Raw and filtered samples: samples.csv.</p></html>

@@ -1,0 +1,19 @@
+  PhotoBench.Core -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\bin\Debug\net10.0\PhotoBench.Core.dll
+  PhotoBench.Tests -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll
+C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0)的测试运行
+总共 1 个测试文件与指定模式相匹配。
+[xUnit.net 00:00:10.77]     PhotoBench.Tests.ArmIntegrationTests.ActualArmFirmwarePassesTcpFaultAndRetainedConnectionResetChecks [FAIL]
+  失败 PhotoBench.Tests.ArmIntegrationTests.ActualArmFirmwarePassesTcpFaultAndRetainedConnectionResetChecks [10 s]
+  错误消息:
+   PhotoBench.Core.Session.SessionInterruptedException : RETRIES_EXHAUSTED
+  堆栈跟踪:
+     at PhotoBench.Core.Session.DeviceSession.ExchangeAsync(Frame request, CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 114
+   at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 39
+   at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 50
+   at PhotoBench.Core.Diagnostics.CommunicationChecks.RunAsync(String host, Int32 port, RenodeRunner simulator, CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Diagnostics\CommunicationChecks.cs:line 103
+   at PhotoBench.Core.Diagnostics.CommunicationChecks.RunAsync(String host, Int32 port, RenodeRunner simulator, CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Diagnostics\CommunicationChecks.cs:line 107
+   at PhotoBench.Tests.ArmIntegrationTests.ActualArmFirmwarePassesTcpFaultAndRetainedConnectionResetChecks() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ArmIntegrationTests.cs:line 21
+   at PhotoBench.Tests.ArmIntegrationTests.ActualArmFirmwarePassesTcpFaultAndRetainedConnectionResetChecks() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ArmIntegrationTests.cs:line 31
+--- End of stack trace from previous location ---
+
+失败!  - 失败:     1，通过:     0，已跳过:     0，总计:     1，持续时间: 10 s - PhotoBench.Tests.dll (net10.0)

@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Photodetector virtual test report</title><style>body{font:16px system-ui;max-width:1100px;margin:40px auto;padding:0 24px;color:#18283b;background:#f6f8fb}h1,h2{color:#123d66}.card{background:white;padding:24px;border-radius:12px;margin:18px 0;border:1px solid #dbe4ee}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}code{overflow-wrap:anywhere}.PASS{color:#127b46}.FAIL,.INCOMPLETE{color:#a42f32}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #dde3ea;text-align:left}</style><h1>Photodetector virtual test bench</h1><p class="FAIL"><b>FAIL</b> · 2026-11-14T14:05:38.3273345+00:00</p><div class="card"><p>ARM instructions execute in Renode. Synthetic codes enter a VIRTUAL_FEED software boundary; no ADC, optical device or physical timing is validated.</p><p>Independent portfolio project by Weitong Liu, developed with AI assistance.</p><p>Firmware 1.0.0 · host PhotoBench1.0.0 / .NET 10.0.15</p><code>ELF SHA256 138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241</code><p>0 actual UART sample results · wall time 2.030 s. Model spacing is separate from wall time.</p></div><section class="card"><h2>dark — <span class="FAIL">FAIL</span></h2><p>SocketException: 由于目标计算机积极拒绝，无法连接。</p><h3>Observed metrics</h3><pre>{}</pre><h3>Project test limits</h3><pre>{}</pre><p>Sessions: 70d0ece0-68df-404c-8b3f-2a2f96714bf2</p></section><section class="card"><h2>Reproduction metadata</h2><pre>{
+  &quot;firmwareVersion&quot;: &quot;1.0.0&quot;,
+  &quot;firmwareSha256&quot;: &quot;138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241&quot;,
+  &quot;hostVersion&quot;: &quot;PhotoBench1.0.0 / .NET 10.0.15&quot;,
+  &quot;toolVersions&quot;: {
+    &quot;recorded_at_utc&quot;: &quot;2026-11-14T00:06:50.803123\u002B00:00&quot;,
+    &quot;archives&quot;: {
+      &quot;renode&quot;: {
+        &quot;path&quot;: &quot;C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\renode-1.17.0\\renode.zip&quot;,
+        &quot;version&quot;: &quot;1.17.0&quot;,
+        &quot;algorithm&quot;: &quot;sha256&quot;,
+        &quot;hash&quot;: &quot;18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db&quot;
+      },
+      &quot;arm&quot;: {
+        &quot;path&quot;: &quot;C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\arm-14.3.rel1\\arm.zip&quot;,
+        &quot;version&quot;: &quot;14.3.Rel1 GCC14.3.1&quot;,
+        &quot;algorithm&quot;: &quot;sha256&quot;,
+        &quot;hash&quot;: &quot;864c0c8815857d68a1bbba2e5e2782255bb922845c71c97636004a3d74f60986&quot;
+      },
+      &quot;dotnet&quot;: {
+        &quot;path&quot;: &quot;C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\dotnet-10.0.404\\dotnet.zip&quot;,
+        &quot;version&quot;: &quot;SDK10.0.404 Runtime10.0.15&quot;,
+        &quot;algorithm&quot;: &quot;sha512&quot;,
+        &quot;hash&quot;: &quot;330ddd2665b43cd2e428216a0d8ea1ac7bb19b5434fdc530e62010dc3b52823a620bf95489d628e1ed6f5122401793ee4887cca4a019122361a1231497f632ee&quot;
+      },
+      &quot;zig&quot;: {
+        &quot;path&quot;: &quot;C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\zig-0.17.1\\zig.zip&quot;,
+        &quot;version&quot;: &quot;0.17.1 Clang22.1.8&quot;,
+        &quot;algorithm&quot;: &quot;sha256&quot;,
+        &quot;hash&quot;: &quot;b03f477a1943673e02aca0f570e8030dffd536ce1f45cbc4d3326ec31159562e&quot;
+      }
+    },
+    &quot;python&quot;: &quot;3.12.7&quot;,
+    &quot;cmake&quot;: &quot;4.4.4&quot;,
+    &quot;ninja&quot;: &quot;1.13.2&quot;,
+    &quot;simulator_vendor_runtime&quot;: &quot;.NET8.0.10&quot;,
+    &quot;host_application_runtime&quot;: &quot;.NET10.0.15&quot;,
+    &quot;platform&quot;: &quot;project-owned Cortex-M4 STM32F4 USART2 subset, F407VG flash/main-SRAM bounds&quot;,
+    &quot;e1_arm_elf_sha256&quot;: &quot;1802bda598598e7d69c2352dbb6f7d5f516be5f9b9bcb425c259ae6505a5e05c&quot;,
+    &quot;e2_filter_assertions&quot;: 245,
+    &quot;e2_ctest_executables_passed&quot;: 1
+  },
+  &quot;fixtureHashes&quot;: {
+    &quot;optical/noise-20uw.json&quot;: &quot;70990122628abf6062812f2405881dee4106c649fa7166d2a37a62c662814617&quot;,
+    &quot;protocol-golden.json&quot;: &quot;2726e426800636c54db45beffecfbd0bc4fb58852f10f1efef786efe1eca7401&quot;
+  },
+  &quot;config&quot;: {
+    &quot;responsivityAperW&quot;: 0.6,
+    &quot;transimpedanceOhm&quot;: 100000,
+    &quot;offsetV&quot;: 0.1,
+    &quot;referenceV&quot;: 3.3,
+    &quot;maximumCode&quot;: 4095,
+    &quot;filterWindow&quot;: 16,
+    &quot;modelSpacingMs&quot;: 1,
+    &quot;noiseSigmaV&quot;: 0.002,
+    &quot;seed&quot;: 20261112,
+    &quot;lowLimit&quot;: 16,
+    &quot;highLimit&quot;: 4079,
+    &quot;responseTimeoutMs&quot;: 2000,
+    &quot;maximumTotalAttempts&quot;: 3,
+    &quot;mode&quot;: &quot;VIRTUAL_FEED&quot;
+  }
+}</pre></section><p>Full machine-readable trace: report.json. Raw and filtered samples: samples.csv.</p></html>

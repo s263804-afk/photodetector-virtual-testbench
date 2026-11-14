@@ -1,0 +1,10 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    CMAKE_TOOLCHAIN_FILE
+
+
+-- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/arm
+[1/1] Linking C executable photo-smoke.elf

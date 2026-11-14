@@ -1,0 +1,22 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/host
+[1/4] Building C object CMakeFiles/photo-core.dir/core/protocol.c.obj
+[2/4] Building C object CMakeFiles/test-protocol.dir/tests/test_protocol.c.obj
+[3/4] Linking C executable test-filter.exe
+[4/4] Linking C executable test-protocol.exe
+Test project C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/host
+    Start 1: filter
+1/2 Test #1: filter ...........................   Passed    0.06 sec
+    Start 2: protocol
+2/2 Test #2: protocol .........................***Failed    0.09 sec
+FAIL line 20: protocol_crc16((const uint8_t *)"123456789", 9) == 0x29B1u
+
+
+50% tests passed, 1 tests failed out of 2
+
+Total Test time (real) =   0.17 sec
+
+The following tests FAILED:
+	  2 - protocol (Failed)
+Errors while running CTest

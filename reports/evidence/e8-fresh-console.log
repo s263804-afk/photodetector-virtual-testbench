@@ -1,0 +1,10 @@
+    0 个错误
+
+已用时间 00:00:01.13
+dark: PASS — Every raw/filtered/flag tuple matched the independent reference.
+light_step: PASS — Every raw/filtered/flag tuple matched the independent reference.
+noise: PASS — Every raw/filtered/flag tuple matched the independent reference. Noise fixture and Python sample statistics are saved separately; no ideal sqrt(16) reduction claim.
+saturation: PASS — Every raw/filtered/flag tuple matched the independent reference.
+linearity: PASS — Every raw/filtered/flag tuple matched the independent reference.
+communication_recovery: PASS — Deliberate byte-delivery faults on actual C#↔TCP↔ARM path; reset preserves TCP.
+Overall: PASS; 3968 UART results; C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.local\fresh-41c41ee8fd2447a5aa9947bafb3cad52\reports\example\report.html

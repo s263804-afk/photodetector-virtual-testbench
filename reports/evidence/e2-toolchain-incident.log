@@ -1,0 +1,18 @@
+The --no-warn-unused-cli option is deprecated.  Use -Wno-unused-cli instead.
+-- The C compiler identification is Clang 22.1.8
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/ROG/AppData/Local/PortfolioTools/zig-0.17.1/zig-x86_64-windows-0.17.1/zig.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (23.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/host
+[1/4] Building C object CMakeFiles/photo-core.dir/core/filter.c.obj
+[2/4] Building C object CMakeFiles/test-filter.dir/tests/test_filter.c.obj
+[3/4] Linking C static library libphoto-core.a
+FAILED: [code=1] libphoto-core.a 
+C:\WINDOWS\system32\cmd.exe /C "cd . && "C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\.venv\Lib\site-packages\cmake\data\bin\cmake.exe" -E rm -f libphoto-core.a && CMAKE_AR-NOTFOUND qc libphoto-core.a  CMakeFiles/photo-core.dir/core/filter.c.obj && cd ."
+'CMAKE_AR-NOTFOUND' is not recognized as an internal or external command,
+operable program or batch file.
+ninja: build stopped: subcommand failed.

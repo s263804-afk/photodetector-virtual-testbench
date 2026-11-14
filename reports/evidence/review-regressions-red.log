@@ -1,0 +1,54 @@
+  PhotoBench.Core -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\bin\Debug\net10.0\PhotoBench.Core.dll
+  PhotoBench.Cli -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\bin\Debug\net10.0\photo-bench.dll
+  PhotoBench.Tests -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll
+C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0)的测试运行
+总共 1 个测试文件与指定模式相匹配。
+[xUnit.net 00:00:02.81]     PhotoBench.Tests.ReviewRegressionTests.RefusedEndpointProducesFailureReportBeforeAnyTransmission [FAIL]
+  失败 PhotoBench.Tests.ReviewRegressionTests.RefusedEndpointProducesFailureReportBeforeAnyTransmission [2 s]
+  错误消息:
+   System.Net.Sockets.SocketException : 由于目标计算机积极拒绝，无法连接。
+  堆栈跟踪:
+     at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.TcpClient.CompleteConnectAsync(ValueTask task)
+   at PhotoBench.Core.Transport.TcpTransport.ConnectAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Transport\TcpTransport.cs:line 11
+   at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 38
+   at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 50
+   at PhotoBench.Core.Reporting.ScenarioRunner.<>c__DisplayClass8_0.<<RunAsync>g__Capture|0>d.MoveNext() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\ScenarioRunner.cs:line 35
+--- End of stack trace from previous location ---
+   at PhotoBench.Core.Reporting.ScenarioRunner.<>c__DisplayClass8_0.<<RunAsync>g__Capture|0>d.MoveNext() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\ScenarioRunner.cs:line 72
+--- End of stack trace from previous location ---
+   at PhotoBench.Core.Reporting.ScenarioRunner.RunAsync(IEnumerable`1 selected, CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\ScenarioRunner.cs:line 86
+   at PhotoBench.Tests.ReviewRegressionTests.RefusedEndpointProducesFailureReportBeforeAnyTransmission() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReviewRegressionTests.cs:line 16
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:04.90]     PhotoBench.Tests.ReviewRegressionTests.RefusalAfterCompletedScenarioPreservesItsSamplesAndTrace [FAIL]
+  失败 PhotoBench.Tests.ReviewRegressionTests.RefusalAfterCompletedScenarioPreservesItsSamplesAndTrace [2 s]
+  错误消息:
+   System.Net.Sockets.SocketException : 由于目标计算机积极拒绝，无法连接。
+  堆栈跟踪:
+     at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.TcpClient.CompleteConnectAsync(ValueTask task)
+   at PhotoBench.Core.Transport.TcpTransport.ConnectAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Transport\TcpTransport.cs:line 11
+   at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 38
+   at PhotoBench.Core.Session.DeviceSession.OpenAsync(CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Session\DeviceSession.cs:line 50
+   at PhotoBench.Core.Reporting.ScenarioRunner.<>c__DisplayClass8_0.<<RunAsync>g__Capture|0>d.MoveNext() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\ScenarioRunner.cs:line 35
+--- End of stack trace from previous location ---
+   at PhotoBench.Core.Reporting.ScenarioRunner.<>c__DisplayClass8_0.<<RunAsync>g__Capture|0>d.MoveNext() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\ScenarioRunner.cs:line 72
+--- End of stack trace from previous location ---
+   at PhotoBench.Core.Reporting.ScenarioRunner.RunAsync(IEnumerable`1 selected, CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\ScenarioRunner.cs:line 107
+   at PhotoBench.Tests.ReviewRegressionTests.RefusalAfterCompletedScenarioPreservesItsSamplesAndTrace() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReviewRegressionTests.cs:line 28
+   at PhotoBench.Tests.ReviewRegressionTests.RefusalAfterCompletedScenarioPreservesItsSamplesAndTrace() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReviewRegressionTests.cs:line 31
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:05.18]     PhotoBench.Tests.ReviewRegressionTests.CommunicationCancellationPreservesCompletedChecksAndInterruptedSession [FAIL]
+  失败 PhotoBench.Tests.ReviewRegressionTests.CommunicationCancellationPreservesCompletedChecksAndInterruptedSession [283 ms]
+  错误消息:
+   Assert.True() Failure
+Expected: True
+Actual:   False
+  堆栈跟踪:
+     at PhotoBench.Tests.ReviewRegressionTests.CommunicationCancellationPreservesCompletedChecksAndInterruptedSession() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReviewRegressionTests.cs:line 43
+   at PhotoBench.Tests.ReviewRegressionTests.CommunicationCancellationPreservesCompletedChecksAndInterruptedSession() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReviewRegressionTests.cs:line 49
+--- End of stack trace from previous location ---
+
+失败!  - 失败:     3，通过:     0，已跳过:     0，总计:     3，持续时间: 4 s - PhotoBench.Tests.dll (net10.0)

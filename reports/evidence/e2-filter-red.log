@@ -1,0 +1,17 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/host
+[1/1] Linking C executable test-filter.exe
+Test project C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/host
+    Start 1: filter
+1/1 Test #1: filter ...........................***Failed    0.09 sec
+FAIL line 13: filter_push(&filter, 100, &output)
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   0.11 sec
+
+The following tests FAILED:
+	  1 - filter (Failed)
+Errors while running CTest

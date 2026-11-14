@@ -1,0 +1,8 @@
+{
+  "Port": 12345,
+  "ElfSha256": "138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241",
+  "Renode": "1.17.0",
+  "Platform": "project STM32F407VG UART subset",
+  "Stimulus": "VIRTUAL_FEED; not an ADC peripheral",
+  "Monitor": "private stdin"
+}

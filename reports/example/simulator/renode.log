@@ -1,0 +1,35 @@
+[15:01:27.5437] [INFO] Loaded monitor commands from: C:\Users\ROG\AppData\Local\PortfolioTools\renode-1.17.0\renode_1.17.0-portable\scripts/monitor.py
+Renode, version 1.17.0 (1.17.0+20260906gitf1dd1b4af)
+
+
+(monitor) i $CWD/simulation/platform.resc
+
+[15:01:27.6281] [INFO] Including script(s): C:\Users\ROG\AppData\Local\PortfolioTools\photobench-runs\b9a67aba6e8543f7addfed741358d46b\simulation\platform.resc
+[15:01:28.4817] [INFO] System bus created.
+[15:01:29.1861] [INFO] sysbus: Loading block of 3448 bytes length at 0x8000000.
+[15:01:29.1926] [INFO] sysbus: Loading block of 1636 bytes length at 0x8000D78.
+Starting emulation...
+
+[15:01:29.4440] [INFO] cpu: Setting initial values: PC = 0x8000041, SP = 0x20020000.
+[15:01:29.4452] [INFO] photo: Machine started.
+(photo) machine Reset
+
+[15:01:47.4641] [INFO] photo: Machine paused.
+[15:01:47.4687] [INFO] sysbus: Loading block of 3448 bytes length at 0x8000000.
+[15:01:47.4688] [INFO] sysbus: Loading block of 1636 bytes length at 0x8000D78.
+[15:01:47.4700] [INFO] cpu: Setting initial values: PC = 0x8000041, SP = 0x20020000.
+[15:01:47.4702] [INFO] photo: Machine resumed.
+(photo) 
+
+(photo) start
+
+Emulation is already started. Ignoring command
+
+(photo) 
+
+(photo) quit
+
+Renode is quitting
+
+[15:01:47.8920] [INFO] photo: Machine paused.
+[15:01:47.9038] [INFO] photo: Disposed.

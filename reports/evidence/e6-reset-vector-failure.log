@@ -1,0 +1,51 @@
+[01:32:01.1165] [INFO] Loaded monitor commands from: C:\Users\ROG\AppData\Local\PortfolioTools\renode-1.17.0\renode_1.17.0-portable\scripts/monitor.py
+Renode, version 1.17.0 (1.17.0+20260906gitf1dd1b4af)
+
+
+(monitor) i $CWD/simulation/platform.resc
+
+[01:32:01.1974] [INFO] Including script(s): C:\Users\ROG\AppData\Local\PortfolioTools\photobench-runs\21bfca36d0494bbea3054b02ed245275\simulation\platform.resc
+[01:32:02.0354] [INFO] System bus created.
+[01:32:02.7172] [INFO] sysbus: Loading block of 3448 bytes length at 0x8000000.
+[01:32:02.7242] [INFO] sysbus: Loading block of 1636 bytes length at 0x8000D78.
+Starting emulation...
+
+[01:32:03.0727] [INFO] cpu: Setting initial values: PC = 0x8000041, SP = 0x20020000.
+[01:32:03.0739] [INFO] photo: Machine started.
+(photo) machine Reset
+
+[01:32:06.7590] [INFO] photo: Machine paused.
+[01:32:06.7622] [WARNING] No action for reset - macro photo.reset is not registered.
+[01:32:06.7632] [WARNING] sysbus: [cpu: 0x0] ReadDoubleWord from non existing peripheral at 0x4.
+[01:32:06.7633] [WARNING] sysbus: [cpu: 0x0] ReadDoubleWord from non existing peripheral at 0x0.
+[01:32:06.7633] [INFO] cpu: Setting initial values: PC = 0x0, SP = 0x0.
+(photo) [01:32:06.7635] [INFO] photo: Machine resumed.
+
+(photo) start
+
+Emulation is already started. Ignoring command
+
+(photo) 
+
+(photo) [01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] WriteDoubleWord to non existing peripheral at 0xFFFFFFFC, value 0x40000000.
+[01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] WriteDoubleWord to non existing peripheral at 0xFFFFFFF8, value 0x0.
+[01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] WriteDoubleWord to non existing peripheral at 0xFFFFFFF4, value 0x0.
+[01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] WriteDoubleWord to non existing peripheral at 0xFFFFFFF0, value 0x0.
+[01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] WriteDoubleWord to non existing peripheral at 0xFFFFFFEC, value 0x0.
+[01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] WriteDoubleWord to non existing peripheral at 0xFFFFFFE8, value 0x0.
+[01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] WriteDoubleWord to non existing peripheral at 0xFFFFFFE4, value 0x0.
+[01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] WriteDoubleWord to non existing peripheral at 0xFFFFFFE0, value 0x0.
+[01:32:06.7672] [WARNING] sysbus: [cpu: 0x0] ReadDoubleWord from non existing peripheral at 0xC.
+[01:32:07.0640] [WARNING] usart2: Received a character, but the receiver is not enabled, dropping.
+[01:32:07.0640] [WARNING] usart2: Received a character, but the receiver is not enabled, dropping. (15)
+[01:32:07.0640] [WARNING] usart2: Received a character, but the receiver is not enabled, dropping. (16)
+[01:32:07.0640] [WARNING] usart2: Received a character, but the receiver is not enabled, dropping. (16)
+[01:32:07.0640] [WARNING] usart2: Received a character, but the receiver is not enabled, dropping. (17)
+[01:32:07.0640] [WARNING] usart2: Received a character, but the receiver is not enabled, dropping. (17)
+[01:32:07.0640] [WARNING] usart2: Received a character, but the receiver is not enabled, dropping. (17)
+quit
+
+Renode is quitting
+
+[01:32:10.1186] [INFO] photo: Machine paused.
+[01:32:10.1303] [INFO] photo: Disposed.

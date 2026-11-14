@@ -1,0 +1,6 @@
+[
+  {"name":"arm","directory":"arm-14.3.rel1","archive":"arm.zip","algorithm":"SHA256","hash":"864c0c8815857d68a1bbba2e5e2782255bb922845c71c97636004a3d74f60986","url":"https://developer.arm.com/-/media/Files/downloads/gnu/14.3.rel1/binrel/arm-gnu-toolchain-14.3.rel1-mingw-w64-x86_64-arm-none-eabi.zip","executable":"bin/arm-none-eabi-gcc.exe"},
+  {"name":"renode","directory":"renode-1.17.0","archive":"renode.zip","algorithm":"SHA256","hash":"18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db","url":"https://github.com/renode/renode/releases/download/v1.17.0/renode-1.17.0.windows-portable.zip","executable":"renode_1.17.0-portable/renode.exe"},
+  {"name":"dotnet","directory":"dotnet-10.0.404","archive":"dotnet.zip","algorithm":"SHA512","hash":"330ddd2665b43cd2e428216a0d8ea1ac7bb19b5434fdc530e62010dc3b52823a620bf95489d628e1ed6f5122401793ee4887cca4a019122361a1231497f632ee","url":"https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.404/dotnet-sdk-10.0.404-win-x64.zip","executable":"dotnet.exe"},
+  {"name":"zig","directory":"zig-0.17.1","archive":"zig.zip","algorithm":"SHA256","hash":"b03f477a1943673e02aca0f570e8030dffd536ce1f45cbc4d3326ec31159562e","url":"https://ziglang.org/download/0.17.1/zig-x86_64-windows-0.17.1.zip","executable":"zig-x86_64-windows-0.17.1/zig.exe"}
+]

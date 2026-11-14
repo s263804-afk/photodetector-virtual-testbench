@@ -1,0 +1,98 @@
+  正在确定要还原的项目…
+  已还原 C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\PhotoBench.Tests.csproj (用时 359 毫秒)。
+  2 个项目(共 3 个)是最新的，无法还原。
+  PhotoBench.Core -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\bin\Debug\net10.0\PhotoBench.Core.dll
+  PhotoBench.Cli -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\bin\Debug\net10.0\PhotoBench.Cli.dll
+  PhotoBench.Tests -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll
+C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0)的测试运行
+总共 1 个测试文件与指定模式相匹配。
+[xUnit.net 00:00:00.30]     PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--scenario", value: "made_up") [FAIL]
+[xUnit.net 00:00:00.31]     PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--port", value: "0") [FAIL]
+[xUnit.net 00:00:00.31]     PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--unknown", value: "x") [FAIL]
+[xUnit.net 00:00:00.31]     PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--low-limit", value: "4095") [FAIL]
+[xUnit.net 00:00:00.31]     PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--transport", value: "serial") [FAIL]
+[xUnit.net 00:00:00.31]     PhotoBench.Tests.CliTests.DocumentedCommandSelectsAllSixGroupsAndExplicitEndpoint [FAIL]
+  失败 PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--scenario", value: "made_up") [36 ms]
+  错误消息:
+   Assert.Throws() Failure: Exception type was not an exact match
+Expected: typeof(System.ArgumentException)
+Actual:   typeof(System.NotImplementedException)
+---- System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(String flag, String value) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+----- Inner Stack Trace -----
+   at PhotoBench.Cli.CliOptions.Parse(String[] args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\CliOptions.cs:line 6
+   at PhotoBench.Tests.CliTests.<>c__DisplayClass1_0.<InvalidCommandIsRejectedBeforeConnecting>b__0() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+  失败 PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--port", value: "0") [< 1 ms]
+  错误消息:
+   Assert.Throws() Failure: Exception type was not an exact match
+Expected: typeof(System.ArgumentException)
+Actual:   typeof(System.NotImplementedException)
+---- System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(String flag, String value) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+   at InvokeStub_CliTests.InvalidCommandIsRejectedBeforeConnecting(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+----- Inner Stack Trace -----
+   at PhotoBench.Cli.CliOptions.Parse(String[] args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\CliOptions.cs:line 6
+   at PhotoBench.Tests.CliTests.<>c__DisplayClass1_0.<InvalidCommandIsRejectedBeforeConnecting>b__0() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+  失败 PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--unknown", value: "x") [< 1 ms]
+  错误消息:
+   Assert.Throws() Failure: Exception type was not an exact match
+Expected: typeof(System.ArgumentException)
+Actual:   typeof(System.NotImplementedException)
+---- System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(String flag, String value) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+   at InvokeStub_CliTests.InvalidCommandIsRejectedBeforeConnecting(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+----- Inner Stack Trace -----
+   at PhotoBench.Cli.CliOptions.Parse(String[] args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\CliOptions.cs:line 6
+   at PhotoBench.Tests.CliTests.<>c__DisplayClass1_0.<InvalidCommandIsRejectedBeforeConnecting>b__0() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+  失败 PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--low-limit", value: "4095") [< 1 ms]
+  错误消息:
+   Assert.Throws() Failure: Exception type was not an exact match
+Expected: typeof(System.ArgumentException)
+Actual:   typeof(System.NotImplementedException)
+---- System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(String flag, String value) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+   at InvokeStub_CliTests.InvalidCommandIsRejectedBeforeConnecting(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+----- Inner Stack Trace -----
+   at PhotoBench.Cli.CliOptions.Parse(String[] args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\CliOptions.cs:line 6
+   at PhotoBench.Tests.CliTests.<>c__DisplayClass1_0.<InvalidCommandIsRejectedBeforeConnecting>b__0() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+  失败 PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(flag: "--transport", value: "serial") [< 1 ms]
+  错误消息:
+   Assert.Throws() Failure: Exception type was not an exact match
+Expected: typeof(System.ArgumentException)
+Actual:   typeof(System.NotImplementedException)
+---- System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Tests.CliTests.InvalidCommandIsRejectedBeforeConnecting(String flag, String value) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+   at InvokeStub_CliTests.InvalidCommandIsRejectedBeforeConnecting(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+----- Inner Stack Trace -----
+   at PhotoBench.Cli.CliOptions.Parse(String[] args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\CliOptions.cs:line 6
+   at PhotoBench.Tests.CliTests.<>c__DisplayClass1_0.<InvalidCommandIsRejectedBeforeConnecting>b__0() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 21
+  失败 PhotoBench.Tests.CliTests.DocumentedCommandSelectsAllSixGroupsAndExplicitEndpoint [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Cli.CliOptions.Parse(String[] args) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Cli\CliOptions.cs:line 6
+   at PhotoBench.Tests.CliTests.DocumentedCommandSelectsAllSixGroupsAndExplicitEndpoint() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\CliTests.cs:line 11
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:03.83]     PhotoBench.Tests.ReportTests.AllScenariosRunAgainstActualArmAndPassIndependentLimits [FAIL]
+  失败 PhotoBench.Tests.ReportTests.AllScenariosRunAgainstActualArmAndPassIndependentLimits [3 s]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Reporting.ReleaseMetadata.Create(String root, String elfSha256, UInt16 low, UInt16 high) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\ReleaseMetadata.cs:line 6
+   at PhotoBench.Tests.ReportTests.AllScenariosRunAgainstActualArmAndPassIndependentLimits() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReportTests.cs:line 54
+   at PhotoBench.Tests.ReportTests.AllScenariosRunAgainstActualArmAndPassIndependentLimits() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReportTests.cs:line 63
+--- End of stack trace from previous location ---
+
+失败!  - 失败:     7，通过:     0，已跳过:     0，总计:     7，持续时间: 3 s - PhotoBench.Tests.dll (net10.0)

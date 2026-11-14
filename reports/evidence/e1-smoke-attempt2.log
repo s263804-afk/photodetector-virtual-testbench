@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\scripts\e1-smoke.py", line 56, in <module>
+    data = connection.recv(1024)
+           ^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out

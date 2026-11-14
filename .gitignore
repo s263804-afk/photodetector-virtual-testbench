@@ -1,0 +1,11 @@
+.local/
+.env
+build/
+bin/
+obj/
+reports/private/
+.venv/
+.idea/
+**/__pycache__/
+.pytest_cache/
+.zig-cache/

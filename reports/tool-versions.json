@@ -1,0 +1,38 @@
+{
+  "recorded_at_utc": "2026-11-14T00:06:50.803123+00:00",
+  "archives": {
+    "renode": {
+      "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\renode-1.17.0\\renode.zip",
+      "version": "1.17.0",
+      "algorithm": "sha256",
+      "hash": "18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db"
+    },
+    "arm": {
+      "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\arm-14.3.rel1\\arm.zip",
+      "version": "14.3.Rel1 GCC14.3.1",
+      "algorithm": "sha256",
+      "hash": "864c0c8815857d68a1bbba2e5e2782255bb922845c71c97636004a3d74f60986"
+    },
+    "dotnet": {
+      "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\dotnet-10.0.404\\dotnet.zip",
+      "version": "SDK10.0.404 Runtime10.0.15",
+      "algorithm": "sha512",
+      "hash": "330ddd2665b43cd2e428216a0d8ea1ac7bb19b5434fdc530e62010dc3b52823a620bf95489d628e1ed6f5122401793ee4887cca4a019122361a1231497f632ee"
+    },
+    "zig": {
+      "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\zig-0.17.1\\zig.zip",
+      "version": "0.17.1 Clang22.1.8",
+      "algorithm": "sha256",
+      "hash": "b03f477a1943673e02aca0f570e8030dffd536ce1f45cbc4d3326ec31159562e"
+    }
+  },
+  "python": "3.12.7",
+  "cmake": "4.4.4",
+  "ninja": "1.13.2",
+  "simulator_vendor_runtime": ".NET8.0.10",
+  "host_application_runtime": ".NET10.0.15",
+  "platform": "project-owned Cortex-M4 STM32F4 USART2 subset, F407VG flash/main-SRAM bounds",
+  "e1_arm_elf_sha256": "1802bda598598e7d69c2352dbb6f7d5f516be5f9b9bcb425c259ae6505a5e05c",
+  "e2_filter_assertions": 245,
+  "e2_ctest_executables_passed": 1
+}

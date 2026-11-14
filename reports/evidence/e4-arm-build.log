@@ -1,0 +1,5 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/arm
+[1/2] Building C object CMakeFiles/photo-firmware.dir/core/protocol.c.obj
+[2/2] Linking C executable photo-firmware.elf

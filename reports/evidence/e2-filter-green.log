@@ -1,0 +1,12 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/host
+[1/2] Building C object CMakeFiles/photo-core.dir/core/filter.c.obj
+[2/2] Linking C executable test-filter.exe
+Test project C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/host
+    Start 1: filter
+1/1 Test #1: filter ...........................   Passed    0.06 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   0.07 sec

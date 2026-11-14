@@ -1,0 +1,16 @@
+$ErrorActionPreference = 'Stop'
+$taskProjectRoot = Split-Path -Parent $PSScriptRoot
+$taskToolsRoot = Join-Path $env:LOCALAPPDATA 'PortfolioTools'
+if ($env:PHOTOBENCH_TOOLS) { $taskToolsRoot = $env:PHOTOBENCH_TOOLS }
+$taskArmRoot = Join-Path $taskToolsRoot 'arm-14.3.rel1'
+$taskDotnetRoot = Join-Path $taskToolsRoot 'dotnet-10.0.404'
+$taskDotnet = Join-Path $taskDotnetRoot 'dotnet.exe'
+$taskZig = Join-Path $taskToolsRoot 'zig-0.17.1\zig-x86_64-windows-0.17.1\zig.exe'
+$taskRenodeRoot = Join-Path $taskToolsRoot 'renode-1.17.0\renode_1.17.0-portable'
+$taskCmake = Join-Path $taskProjectRoot '.venv\Scripts\cmake.exe'
+$taskNinja = Join-Path $taskProjectRoot '.venv\Scripts\ninja.exe'
+$env:DOTNET_ROOT = $taskDotnetRoot
+$env:DOTNET_CLI_HOME = Join-Path $taskProjectRoot '.local\dotnet-home'
+$env:DOTNET_CLI_TELEMETRY_OPTOUT = '1'
+$env:DOTNET_SKIP_FIRST_TIME_EXPERIENCE = '1'
+$env:DOTNET_GENERATE_ASPNET_CERTIFICATE = 'false'

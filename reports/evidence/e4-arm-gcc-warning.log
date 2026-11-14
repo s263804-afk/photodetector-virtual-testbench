@@ -1,0 +1,17 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/build/arm
+[1/7] Building ASM object CMakeFiles/photo-firmware.dir/platform/stm32/startup.S.obj
+[2/7] Building C object CMakeFiles/photo-firmware.dir/platform/stm32/uart.c.obj
+[3/7] Building C object CMakeFiles/photo-firmware.dir/platform/stm32/main.c.obj
+[4/7] Building C object CMakeFiles/photo-firmware.dir/core/filter.c.obj
+[5/7] Building C object CMakeFiles/photo-firmware.dir/core/protocol.c.obj
+FAILED: [code=1] CMakeFiles/photo-firmware.dir/core/protocol.c.obj 
+C:\Users\ROG\AppData\Local\PortfolioTools\arm-14.3.rel1\bin\arm-none-eabi-gcc.exe  -I"C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/firmware/core" -I"C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/firmware/platform/stm32" -std=gnu11 -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Os -ffreestanding -ffunction-sections -fdata-sections -Wall -Wextra -Werror -MD -MT CMakeFiles/photo-firmware.dir/core/protocol.c.obj -MF CMakeFiles\photo-firmware.dir\core\protocol.c.obj.d -o CMakeFiles/photo-firmware.dir/core/protocol.c.obj -c "C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/firmware/core/protocol.c"
+C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/firmware/core/protocol.c: In function 'protocol_crc16':
+C:/Users/ROG/Documents/ChatGPT/SQL, STM32/projects/photodetector-virtual-testbench/firmware/core/protocol.c:30:63: error: operand of '?:' changes signedness from 'int' to 'unsigned int' due to unsignedness of other operand [-Werror=sign-compare]
+   30 |             crc=(uint16_t)((crc&0x8000u) ? (crc<<1)^0x1021u : crc<<1);
+      |                                                               ^~~~~~
+cc1.exe: all warnings being treated as errors
+[6/7] Building C object CMakeFiles/photo-firmware.dir/core/device.c.obj
+ninja: build stopped: subcommand failed.

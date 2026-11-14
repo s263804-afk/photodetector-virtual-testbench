@@ -1,0 +1,10 @@
+include @simulation/LoopbackTerminal.cs
+using sysbus
+mach create "photo"
+machine LoadPlatformDescription @simulation/platform.repl
+emulation CreateLoopbackTerminal 12345 "uart"
+connector Connect sysbus.usart2 uart
+usart2 CreateFileBackend @.local/uart-smoke.log true
+sysbus LoadELF @build/arm/photo-smoke.elf
+cpu VectorTableOffset 0x08000000
+start

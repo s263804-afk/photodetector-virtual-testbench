@@ -1,0 +1,32 @@
+  PhotoBench.Core -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\bin\Debug\net10.0\PhotoBench.Core.dll
+  PhotoBench.Tests -> C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll
+C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\bin\Debug\net10.0\PhotoBench.Tests.dll (.NETCoreApp,Version=v10.0)的测试运行
+总共 1 个测试文件与指定模式相匹配。
+[xUnit.net 00:00:00.25]     PhotoBench.Tests.ReportTests.ExportHasTraceableSchemaCsvAndHtml [FAIL]
+  失败 PhotoBench.Tests.ReportTests.ExportHasTraceableSchemaCsvAndHtml [16 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Reporting.ReportWriter.WriteAsync(BenchReport report, String outputDirectory, CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\BenchReport.cs:line 23
+   at PhotoBench.Tests.ReportTests.ExportHasTraceableSchemaCsvAndHtml() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReportTests.cs:line 36
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:03.80]     PhotoBench.Tests.ReportTests.AllScenariosRunAgainstActualArmAndPassIndependentLimits [FAIL]
+  失败 PhotoBench.Tests.ReportTests.AllScenariosRunAgainstActualArmAndPassIndependentLimits [3 s]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Reporting.ScenarioRunner.RunAsync(IEnumerable`1 selected, CancellationToken cancellationToken) in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\ScenarioRunner.cs:line 12
+   at PhotoBench.Tests.ReportTests.AllScenariosRunAgainstActualArmAndPassIndependentLimits() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReportTests.cs:line 56
+   at PhotoBench.Tests.ReportTests.AllScenariosRunAgainstActualArmAndPassIndependentLimits() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReportTests.cs:line 60
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:03.81]     PhotoBench.Tests.ReportTests.MissingInterruptedFailedAndDuplicateScenariosCannotPass [FAIL]
+  失败 PhotoBench.Tests.ReportTests.MissingInterruptedFailedAndDuplicateScenariosCannotPass [< 1 ms]
+  错误消息:
+   System.NotImplementedException : The method or operation is not implemented.
+  堆栈跟踪:
+     at PhotoBench.Core.Reporting.BenchReport.get_OverallVerdict() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Core\Reporting\BenchReport.cs:line 17
+   at PhotoBench.Tests.ReportTests.MissingInterruptedFailedAndDuplicateScenariosCannotPass() in C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\photodetector-virtual-testbench\host\PhotoBench.Tests\ReportTests.cs:line 20
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+失败!  - 失败:     3，通过:     0，已跳过:     0，总计:     3，持续时间: 3 s - PhotoBench.Tests.dll (net10.0)

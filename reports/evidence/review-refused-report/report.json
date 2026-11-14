@@ -1,0 +1,83 @@
+{
+  "startedUtc": "2026-11-14T14:05:38.3273345+00:00",
+  "wallTimeSeconds": 2.030065,
+  "metadata": {
+    "firmwareVersion": "1.0.0",
+    "firmwareSha256": "138d93321b3968a59178e2f0d839ccfe5100cee4558fe41aeae14f7e27ad5241",
+    "hostVersion": "PhotoBench1.0.0 / .NET 10.0.15",
+    "toolVersions": {
+      "recorded_at_utc": "2026-11-14T00:06:50.803123\u002B00:00",
+      "archives": {
+        "renode": {
+          "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\renode-1.17.0\\renode.zip",
+          "version": "1.17.0",
+          "algorithm": "sha256",
+          "hash": "18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db"
+        },
+        "arm": {
+          "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\arm-14.3.rel1\\arm.zip",
+          "version": "14.3.Rel1 GCC14.3.1",
+          "algorithm": "sha256",
+          "hash": "864c0c8815857d68a1bbba2e5e2782255bb922845c71c97636004a3d74f60986"
+        },
+        "dotnet": {
+          "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\dotnet-10.0.404\\dotnet.zip",
+          "version": "SDK10.0.404 Runtime10.0.15",
+          "algorithm": "sha512",
+          "hash": "330ddd2665b43cd2e428216a0d8ea1ac7bb19b5434fdc530e62010dc3b52823a620bf95489d628e1ed6f5122401793ee4887cca4a019122361a1231497f632ee"
+        },
+        "zig": {
+          "path": "C:\\Users\\ROG\\AppData\\Local\\PortfolioTools\\zig-0.17.1\\zig.zip",
+          "version": "0.17.1 Clang22.1.8",
+          "algorithm": "sha256",
+          "hash": "b03f477a1943673e02aca0f570e8030dffd536ce1f45cbc4d3326ec31159562e"
+        }
+      },
+      "python": "3.12.7",
+      "cmake": "4.4.4",
+      "ninja": "1.13.2",
+      "simulator_vendor_runtime": ".NET8.0.10",
+      "host_application_runtime": ".NET10.0.15",
+      "platform": "project-owned Cortex-M4 STM32F4 USART2 subset, F407VG flash/main-SRAM bounds",
+      "e1_arm_elf_sha256": "1802bda598598e7d69c2352dbb6f7d5f516be5f9b9bcb425c259ae6505a5e05c",
+      "e2_filter_assertions": 245,
+      "e2_ctest_executables_passed": 1
+    },
+    "fixtureHashes": {
+      "optical/noise-20uw.json": "70990122628abf6062812f2405881dee4106c649fa7166d2a37a62c662814617",
+      "protocol-golden.json": "2726e426800636c54db45beffecfbd0bc4fb58852f10f1efef786efe1eca7401"
+    },
+    "config": {
+      "responsivityAperW": 0.6,
+      "transimpedanceOhm": 100000,
+      "offsetV": 0.1,
+      "referenceV": 3.3,
+      "maximumCode": 4095,
+      "filterWindow": 16,
+      "modelSpacingMs": 1,
+      "noiseSigmaV": 0.002,
+      "seed": 20261112,
+      "lowLimit": 16,
+      "highLimit": 4079,
+      "responseTimeoutMs": 2000,
+      "maximumTotalAttempts": 3,
+      "mode": "VIRTUAL_FEED"
+    }
+  },
+  "scenarios": [
+    {
+      "name": "dark",
+      "verdict": "FAIL",
+      "sessionIds": [
+        "70d0ece0-68df-404c-8b3f-2a2f96714bf2"
+      ],
+      "metrics": {},
+      "limits": {},
+      "detail": "SocketException: \u7531\u4E8E\u76EE\u6807\u8BA1\u7B97\u673A\u79EF\u6781\u62D2\u7EDD\uFF0C\u65E0\u6CD5\u8FDE\u63A5\u3002"
+    }
+  ],
+  "samples": [],
+  "trace": [],
+  "simulationDisclaimer": "ARM instructions execute in Renode. Synthetic codes enter a VIRTUAL_FEED software boundary; no ADC, optical device or physical timing is validated.",
+  "overallVerdict": "FAIL"
+}
